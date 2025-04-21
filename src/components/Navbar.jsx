@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../CSS/Navbar.css";
+import "../CSS/Button.css"
 
 function Navbar() {
   return (
@@ -10,9 +11,9 @@ function Navbar() {
         <h1 className='logo'>DBMS (Relational)</h1>
       </div>
       <div className='routes'>
-        <Link className='nav-link' to="/">Home</Link> | 
-        <Link className='nav-link' to="/about">About</Link> | 
-        <Link className='nav-link' to="/contact">Contact</Link>
+        <Link className='nav-link' to="/"><button className='btn'>Home</button></Link> | 
+        <Link className='nav-link' to="/about"><button className='btn'>About</button></Link> | 
+        <Link className='nav-link' to="/contact"><button className='btn'>Contact</button></Link>
       </div>
 
     </nav>
