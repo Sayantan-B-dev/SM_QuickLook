@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Contact() {
+function JAVA() {
   return (
     <div>
-      <h1>Contact</h1>
+          <h1>JAVA</h1>
     </div>
   )
 }
+
+export default JAVA
