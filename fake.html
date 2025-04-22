@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Skill Showcase</title>
+  <style>
+    :root {
+      --bg-color: #1e1e2f;
+      --card-bg: #2a2a3d;
+      --primary: #00ffff;
+      --accent: #ff00ff;
+      --text: #f1f1f1;
+      --muted: #aaa;
+      --transition: 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: var(--text);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+      transition: transform var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem auto;
+    }
+
+    .tabs button {
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .tabs button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      background: var(--card-bg);
+      border-radius: 1rem;
+      margin: 1rem auto;
+      max-width: 800px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    input, textarea, select {
+      padding: 0.7rem;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+    }
+
+    button[type="submit"] {
+      background: var(--primary);
+      color: #000;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      transition: background var(--transition);
+    }
+
+    button[type="submit"]:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .tabs {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DarkSkills</h1>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#tabs">Tabs</a>
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>HTML, CSS & JS Mastery</h2>
+    <p>Explore this dark-themed interactive portfolio demonstrating modern web development skills including semantic HTML, dynamic tabs, responsive cards, and JS interactivity.</p>
+  </section>
+
+  <section id="skills" class="cards">
+    <div class="card">
+      <h3>Semantic HTML</h3>
+      <p>Proper use of sections, articles, headers, and footers for accessibility and SEO.</p>
+    </div>
+    <div class="card">
+      <h3>CSS Magic</h3>
+      <p>Dark theme, transitions, flexbox, grid, animations, and CSS variables.</p>
+    </div>
+    <div class="card">
+      <h3>JavaScript Interactivity</h3>
+      <p>Dynamic tabs, form validation, modals, and theme switching for real UX.</p>
+    </div>
+  </section>
+
+  <section id="tabs">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="1">HTML</button>
+      <button class="tab-btn" data-tab="2">CSS</button>
+      <button class="tab-btn" data-tab="3">JavaScript</button>
+    </div>
+    <div class="tab-content active" data-content="1">
+      <h3>HTML Tips</h3>
+      <p>Use semantic tags, alt attributes, and maintain clean structure for SEO and accessibility.</p>
+    </div>
+    <div class="tab-content" data-content="2">
+      <h3>CSS Tricks</h3>
+      <p>Use variables for theming, use flex/grid for layout, and keep components reusable.</p>
+    </div>
+    <div class="tab-content" data-content="3">
+      <h3>JS Advice</h3>
+      <p>Use event delegation, modular code, and always validate forms before submission.</p>
+    </div>
+  </section>
+
+  <section id="form">
+    <form onsubmit="return validateForm()">
+      <h3>Contact Me</h3>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DarkSkills Showcase. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const tabNum = btn.dataset.tab;
+        tabContents.forEach(content => {
+          content.classList.remove("active");
+          if (content.dataset.content === tabNum) {
+            content.classList.add("active");
+          }
+        });
+      });
+    });
+
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return false;
+      }
+      alert("Message sent!");
+      return true;
+    }
+  </script>
+</body>
+</html>

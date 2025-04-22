@@ -1,0 +1,77 @@
+.dbms-wrapper {
+    padding: 24px;
+    width: 100%;
+  }
+  
+  .dbms-card {
+    width: 70%;
+    margin: auto;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dbms-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #22d3ee;
+    animation: pulse 1.5s infinite;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .dbms-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #a78bfa;
+  }
+  
+  .dbms-section {
+    margin-bottom: 2rem;
+  }
+  
+  .dbms-example {
+    margin-top: 0.75rem;
+    color: #9ca3af;
+  }
+  
+  .dbms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .dbms-grid-item {
+    background-color: #374151;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dbms-grid-item h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .structured h3 {
+    color: #34d399;
+  }
+  
+  .unstructured h3 {
+    color: #f472b6;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  

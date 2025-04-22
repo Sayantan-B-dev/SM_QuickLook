@@ -1,7 +1,6 @@
+
 #root {
-  margin: 0 auto;
-  text-align: center;
-  position: sticky;
+  margin:auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,9 +18,10 @@
 }
 
 .container {
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
 }
