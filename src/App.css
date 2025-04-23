@@ -1,27 +1,8 @@
 
-#root {
-  margin:auto;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
+.main{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
 }

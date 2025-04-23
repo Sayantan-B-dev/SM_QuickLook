@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../../CSS/DbmsCard.css'
+import '../../../../CSS/Dbms.css'
 
 function DBMSintro() {
   return (

@@ -4,7 +4,7 @@
   }
   
   .dbms-card {
-    width: 70%;
+    width: 80%;
     margin: auto;
     background-color: #1f2937;
     color: #ffffff;
@@ -75,3 +75,11 @@
     }
   }
   
+  .CategoryDbms{
+    padding-right: 10px;
+    height: 20px;
+  }
+
+  .dbmsBox{
+margin-top: 10px;
+  }
