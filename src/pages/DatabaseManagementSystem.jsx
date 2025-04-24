@@ -1,10 +1,17 @@
 import React from "react";
 import { useState } from "react";
+
 import DBMSintro from "../features/subjects/dbms/notes/DBMSintro";
 import DBMSvsFile from "../features/subjects/dbms/notes/DBMSvsFile";
 import ArchitectureTiers from "../features/subjects/dbms/notes/ArchitectureTiers";
 import SchemaArchitecture from "../features/subjects/dbms/notes/SchemaArchitecture";
 import DataIndependence from "../features/subjects/dbms/notes/DataIndependence";
+import IntegrityConstraints from "../features/subjects/dbms/notes/IntegrityConstraints";
+import DBMSKeys from "../features/subjects/dbms/notes/DBMSKeys";
+import CandidateKey from "../features/subjects/dbms/notes/CandidateKey";
+import PrimaryKey from "../features/subjects/dbms/notes/PrimaryKey";
+import ForeignKey from "../features/subjects/dbms/notes/ForeignKey";
+import ForeignKeyOperations from "../features/subjects/dbms/notes/ForeignKeyOperations";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -29,6 +36,12 @@ function DatabaseManagementSystem() {
           <ArchitectureTiers />
           <SchemaArchitecture />
           <DataIndependence />
+          <IntegrityConstraints />
+          <DBMSKeys />
+          <CandidateKey />
+          <PrimaryKey/>
+          <ForeignKey />
+          <ForeignKeyOperations />
         </div>
       )}
 
