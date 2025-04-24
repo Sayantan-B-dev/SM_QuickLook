@@ -12,6 +12,7 @@ import CandidateKey from "../features/subjects/dbms/notes/CandidateKey";
 import PrimaryKey from "../features/subjects/dbms/notes/PrimaryKey";
 import ForeignKey from "../features/subjects/dbms/notes/ForeignKey";
 import ForeignKeyOperations from "../features/subjects/dbms/notes/ForeignKeyOperations";
+import SuperKeyDetails from "../features/subjects/dbms/notes/SuperKeyDetails";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -42,6 +43,7 @@ function DatabaseManagementSystem() {
           <PrimaryKey/>
           <ForeignKey />
           <ForeignKeyOperations />
+          <SuperKeyDetails />
         </div>
       )}
 
