@@ -47,15 +47,13 @@
 
 .allDbmsBtn,.diplomaDbmsBtn{
     padding: 5px 20px;
-    margin-top: 20px ;
-    color: white;
+    color: rgb(168, 158, 158);
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 2px;
     text-decoration: underline;
-    backdrop-filter: blur(5px);
     border:1px solid white;
   &:hover {
     background-color: #1a388b77; 

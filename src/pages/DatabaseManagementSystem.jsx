@@ -4,12 +4,13 @@ import DBMSintro from "../features/subjects/dbms/notes/DBMSintro";
 import DBMSvsFile from "../features/subjects/dbms/notes/DBMSvsFile";
 import ArchitectureTiers from "../features/subjects/dbms/notes/ArchitectureTiers";
 import SchemaArchitecture from "../features/subjects/dbms/notes/SchemaArchitecture";
+import DataIndependence from "../features/subjects/dbms/notes/DataIndependence";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
   return (
     <>
-      <div className="CategoryDbms m-auto w-full justify-center flex flex-row items-end gap-2 sticky top-10 z-10">
+      <div className="CategoryDbms justify-center flex gap-2 sticky top-0 z-10">
         <button className="allDbmsBtn" onClick={() => setActiveTab("all")}>
           All
         </button>
@@ -27,6 +28,7 @@ function DatabaseManagementSystem() {
           <DBMSvsFile />
           <ArchitectureTiers />
           <SchemaArchitecture />
+          <DataIndependence />
         </div>
       )}
 
