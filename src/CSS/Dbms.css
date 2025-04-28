@@ -101,7 +101,7 @@
 
 
 
-  .example-table {
+  .example-table,.dbms-table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
@@ -111,12 +111,12 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
-  .example-table thead {
+  .example-table,.dbms-table thead {
     color: white;
   }
   
-  .example-table th,
-  .example-table td {
+  .example-table,.dbms-table th,
+  .example-table,.dbms-table td {
     padding: 12px 16px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -124,7 +124,7 @@
   
 
   
-  .example-table tbody tr:hover {
+  .example-table,.dbms-table tbody tr:hover {
     background-color: #e6f7f4;
     color: #1f2937;
     transition: background-color 0.3s;
@@ -144,9 +144,29 @@
     background-color: #1d4ed8; /* blue-700 */
   }
   
-  li>strong{
-    padding-left: 20px;
-  }
+ 
   .step{
     margin-top: 1rem;
+  }
+
+
+  li::before {
+    content: "🔹"; /* Add any emoji you like here */
+    font-size: 1.2em; /* Adjust size if needed */
+  }
+
+  pre{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  code{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: monospace;
   }

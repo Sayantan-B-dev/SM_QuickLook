@@ -37,6 +37,26 @@ import {
   FullOuterJoin,
   CrossJoin,
 } from "../features/subjects/dbms/notes/joinsIntro";
+import {RelationalAlgebra,TupleCalculus} from "../features/subjects/dbms/notes/RelationalAlgebra";
+import SQLCommands from "../features/subjects/dbms/notes/SQLCommands";
+import SQLCommands2 from "../features/subjects/dbms/notes/SQLCommands2";
+import AggregateFunctionsAndSubqueries from "../features/subjects/dbms/notes/AggregateFunctionsAndSubqueries";
+import PLsqlAndTransactions from "../features/subjects/dbms/notes/PLsqlAndTransactions";
+import TransactionConcepts from "../features/subjects/dbms/notes/TransactionConcepts";
+import ConcurrencyProblems from "../features/subjects/dbms/notes/ConcurrencyProblems";
+import AdvancedScheduling from "../features/subjects/dbms/notes/AdvancedScheduling";
+import ConcurrencyControl from "../features/subjects/dbms/notes/ConcurrencyControl";
+import Indexing from "../features/subjects/dbms/notes/Indexing";
+import BTreeComponent from "../features/subjects/dbms/notes/BTreeComponent";
+import DatabaseModificationComponent from "../features/subjects/dbms/notes/DatabaseModificationComponent";
+import SqlLikeCommand from "../features/subjects/dbms/notes/SqlLikeCommand";
+
+
+
+
+
+
+
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -89,6 +109,20 @@ function DatabaseManagementSystem() {
             <RightOuterJoin />,
             <FullOuterJoin />,
             <CrossJoin />,
+            <RelationalAlgebra />,
+            <TupleCalculus />,
+            <SQLCommands />,
+            <SQLCommands2 />,
+            <AggregateFunctionsAndSubqueries />,
+            <PLsqlAndTransactions />,
+            <TransactionConcepts />,
+            <ConcurrencyProblems />,
+            <AdvancedScheduling />,
+            <ConcurrencyControl />,
+            <Indexing />,
+            <BTreeComponent />,
+            <DatabaseModificationComponent />,
+            <SqlLikeCommand />,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
