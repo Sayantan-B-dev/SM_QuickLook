@@ -130,3 +130,17 @@
     transition: background-color 0.3s;
   }
   
+  .dbmsBtn {
+    padding: 0.5rem 1rem; /* py-2 px-4 */
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    border: none;
+    border-radius: 0.5rem; /* rounded-lg */
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .dbmsBtn:hover {
+    background-color: #1d4ed8; /* blue-700 */
+  }
+  
