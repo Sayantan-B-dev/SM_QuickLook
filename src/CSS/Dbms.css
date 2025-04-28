@@ -144,3 +144,9 @@
     background-color: #1d4ed8; /* blue-700 */
   }
   
+  li>strong{
+    padding-left: 20px;
+  }
+  .step{
+    margin-top: 1rem;
+  }

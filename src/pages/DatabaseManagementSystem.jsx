@@ -20,7 +20,23 @@ import ERAttributes from "../features/subjects/dbms/notes/ERAttributes";
 import RelationshipDegree from "../features/subjects/dbms/notes/RelationshipDegree";
 import Normalization from "../features/subjects/dbms/notes/Normalization";
 import FunctionalDependency from "../features/subjects/dbms/notes/FunctionalDependency";
-import NormalForms  from "../features/subjects/dbms/notes/NormalForms";
+import NormalForms from "../features/subjects/dbms/notes/NormalForms";
+import MinimalCover from "../features/subjects/dbms/notes/MinimalCover";
+import FD_Cover_Equivalence_Decomposition from "../features/subjects/dbms/notes/FD_Cover_Equivalence_Decomposition";
+import {
+  JoinsIntroduction,
+  NaturalJoin,
+  EquiJoin,
+  SelfJoin,
+  ConditionalJoin,
+  InnerJoin,
+  LeftJoin,
+  RightJoin,
+  LeftOuterJoin,
+  RightOuterJoin,
+  FullOuterJoin,
+  CrossJoin,
+} from "../features/subjects/dbms/notes/joinsIntro";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -59,6 +75,20 @@ function DatabaseManagementSystem() {
             <Normalization />,
             <FunctionalDependency />,
             <NormalForms />,
+            <MinimalCover />,
+            <FD_Cover_Equivalence_Decomposition />,
+            <JoinsIntroduction />,
+            <NaturalJoin />,
+            <EquiJoin />,
+            <SelfJoin />,
+            <ConditionalJoin />,
+            <InnerJoin />,
+            <LeftJoin />,
+            <RightJoin />,
+            <LeftOuterJoin />,
+            <RightOuterJoin />,
+            <FullOuterJoin />,
+            <CrossJoin />,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
