@@ -97,13 +97,22 @@ function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
   return (
     <>
-      <div className="CategoryDbms justify-center flex flex-col gap-2 top-0 z-10">
-        <button className="allBtn dbmsBtn" onClick={() => setActiveTab("all")}>
-          All
-        </button>
-        <button className="diplomaBtn dbmsBtn" onClick={() => setActiveTab("diploma")}>
-          Diploma
-        </button>
+      <div className="parentHeader">
+        <div className="CategoryDbms justify-center flex flex-col gap-2 top-0 z-10">
+          <button
+            className="allBtn dbmsBtn"
+            onClick={() => setActiveTab("all")}
+          >
+            All
+          </button>
+          <button
+            className="diplomaBtn dbmsBtn"
+            onClick={() => setActiveTab("diploma")}
+          >
+            Diploma
+          </button>
+        </div>
+        <div className="SectionName">Database Management System</div>
       </div>
 
 

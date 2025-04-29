@@ -1,8 +1,8 @@
 .container {
     flex: 1;
     display: flex;
-    margin: auto; 
     flex-direction: column;
     justify-content: center;
-    
-  }
+    flex-grow: 1;
+    min-width: 85%;
+}
