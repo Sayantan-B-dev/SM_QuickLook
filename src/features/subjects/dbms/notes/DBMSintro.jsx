@@ -4,6 +4,7 @@ import '../../../../CSS/Dbms.css'
 function DBMSintro() {
   return (
     <div className="dbms-wrapper">
+      
       <div className="dbms-card">
         <h1 className="dbms-title">📚 Introduction to DBMS</h1>
 

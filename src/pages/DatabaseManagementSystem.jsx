@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 import AnimateOnScroll from "../components/Animations/AnimateOnScroll";
-import SectionHead from "../features/subjects/dbms/SectionHead";
+import SectionHead from "../components/SectionHead";
 import "../CSS/Dbms.css";
 
 import DBMSintro from "../features/subjects/dbms/notes/DBMSintro";
@@ -82,7 +82,7 @@ import DataAbstractionExplained from "../features/subjects/dbms/notes/DataAbstra
 import DbmsComponentsAndArchitecture from "../features/subjects/dbms/notes/DbmsComponentsAndArchitecture";
 import DbaRolesAndDataDictionary from "../features/subjects/dbms/notes/DbaRolesAndDataDictionary";
 import TypesOfDatabaseLanguages from "../features/subjects/dbms/notes/TypesOfDatabaseLanguages";
-import DataModelsAndComparativeStudy  from "../features/subjects/dbms/notes/DataModelsAndComparativeStudy";
+import DataModelsAndComparativeStudy from "../features/subjects/dbms/notes/DataModelsAndComparativeStudy";
 import EnhancedERModel from "../features/subjects/dbms/notes/EnhancedERModel";
 import RelationalModel from "../features/subjects/dbms/notes/RelationalModel";
 import RelationalAlgebraAndCalculus from "../features/subjects/dbms/notes/RelationalAlgebraAndCalculus";
@@ -91,25 +91,21 @@ import SqlQueriesAndFunctions from "../features/subjects/dbms/notes/SqlQueriesAn
 import NullValuesNestedComplexQueries from "../features/subjects/dbms/notes/NullValuesNestedComplexQueries";
 import PlSqlIntroduction from "../features/subjects/dbms/notes/PlSqlIntroduction";
 import NormalizationAndDependencies from "../features/subjects/dbms/notes/NormalizationAndDependencies";
-import MultivaluedDependencies  from "../features/subjects/dbms/notes/MultivaluedDependencies";
-
-
+import MultivaluedDependencies from "../features/subjects/dbms/notes/MultivaluedDependencies";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
   return (
     <>
-      <div className="CategoryDbms justify-center flex gap-2 sticky top-0 z-10">
-        <button className="allDbmsBtn" onClick={() => setActiveTab("all")}>
+      <div className="CategoryDbms justify-center flex flex-col gap-2 top-0 z-10">
+        <button className="allBtn dbmsBtn" onClick={() => setActiveTab("all")}>
           All
         </button>
-        <button
-          className="diplomaDbmsBtn"
-          onClick={() => setActiveTab("diploma")}
-        >
+        <button className="diplomaBtn dbmsBtn" onClick={() => setActiveTab("diploma")}>
           Diploma
         </button>
       </div>
+
 
       {activeTab === "all" && (
         <div className="allDbms dbmsBox">
@@ -125,6 +121,10 @@ function DatabaseManagementSystem() {
             <TypesOfDatabaseLanguages />,
             <IntegrityConstraints />,
             <DataModelsAndComparativeStudy />,
+            <ERModel />,
+            <ERAttributes />,
+            <EnhancedERModel />,
+            <RelationshipDegree />,
             <RelationalModel />,
             <DBMSKeys />,
             <CandidateKey />,
@@ -132,12 +132,8 @@ function DatabaseManagementSystem() {
             <ForeignKey />,
             <ForeignKeyOperations />,
             <SuperKeyDetails />,
-            <ERModel />,
-            <ERAttributes />,
             <SecurityAndAuthorization />,
             <RelationalAlgebraAndCalculus />,
-            <EnhancedERModel />,
-            <RelationshipDegree />,
             <Normalization />,
             <FunctionalDependency />,
             <NormalForms />,
@@ -201,66 +197,66 @@ function DatabaseManagementSystem() {
       {activeTab === "diploma" && (
         <div className="diplomaDbms dbmsBox">
           {[
-            <SectionHead text="Database System Concepts & Architecture"/>,
-              <DBMSintro />,
-              <DBMSvsFile />,
-              <DataAbstractionExplained />,
-              <TypesOfDatabaseLanguages />,
-              <DataIndependence />,
-              <DbmsComponentsAndArchitecture />,
-              <DbaRolesAndDataDictionary />,
+            <SectionHead text="Database System Concepts & Architecture" />,
+            <DBMSintro />,
+            <DBMSvsFile />,
+            <DataAbstractionExplained />,
+            <TypesOfDatabaseLanguages />,
+            <DataIndependence />,
+            <DbmsComponentsAndArchitecture />,
+            <DbaRolesAndDataDictionary />,
 
-            <SectionHead text="Data Modeling Technique"/>,
-              <DataModelsAndComparativeStudy />,
-              <ERModel />,
-              <ERAttributes />,
-              <EnhancedERModel />,
+            <SectionHead text="Data Modeling Technique" />,
+            <DataModelsAndComparativeStudy />,
+            <ERModel />,
+            <ERAttributes />,
+            <EnhancedERModel />,
 
-            <SectionHead text="Relational Data Model in Depth"/>,
-              <RelationalModel />,
-              <DBMSKeys />,
-              <CandidateKey />,
-              <PrimaryKey />,
-              <ForeignKey />,
-              <ForeignKeyOperations />,
-              <SuperKeyDetails />,
-              <IntegrityConstraints2 />,
-              <SecurityAndAuthorization />,
-              <RelationalAlgebraAndCalculus />,
+            <SectionHead text="Relational Data Model in Depth" />,
+            <RelationalModel />,
+            <DBMSKeys />,
+            <CandidateKey />,
+            <PrimaryKey />,
+            <ForeignKey />,
+            <ForeignKeyOperations />,
+            <SuperKeyDetails />,
+            <IntegrityConstraints2 />,
+            <SecurityAndAuthorization />,
+            <RelationalAlgebraAndCalculus />,
 
-            <SectionHead text="Structured Query Language"/>,
-              <SqlQueriesAndFunctions />,
-              <SQLFunctions />,
-              <SQLCommands />,
-              <SQLCommands2 />,
-              <NullValuesNestedComplexQueries />,
-              <JoinsIntroduction />,
-              <NaturalJoin />,
-              <EquiJoin />,
-              <SelfJoin />,
-              <ConditionalJoin />,
-              <InnerJoin />,
-              <LeftJoin />,
-              <RightJoin />,
-              <LeftOuterJoin />,
-              <RightOuterJoin />,
-              <FullOuterJoin />,
-              <CrossJoin />,
-              <PlSqlIntroduction />,
-              <PLsqlAndTransactions />,
-              <BasicPlsqlAndLoops />,
-              <ProceduresInPLSQL />,
-              <FetchDatePLSQL />,
-              <CursorInPLSQL />,
+            <SectionHead text="Structured Query Language" />,
+            <SqlQueriesAndFunctions />,
+            <SQLFunctions />,
+            <SQLCommands />,
+            <SQLCommands2 />,
+            <NullValuesNestedComplexQueries />,
+            <JoinsIntroduction />,
+            <NaturalJoin />,
+            <EquiJoin />,
+            <SelfJoin />,
+            <ConditionalJoin />,
+            <InnerJoin />,
+            <LeftJoin />,
+            <RightJoin />,
+            <LeftOuterJoin />,
+            <RightOuterJoin />,
+            <FullOuterJoin />,
+            <CrossJoin />,
+            <PlSqlIntroduction />,
+            <PLsqlAndTransactions />,
+            <BasicPlsqlAndLoops />,
+            <ProceduresInPLSQL />,
+            <FetchDatePLSQL />,
+            <CursorInPLSQL />,
 
-            <SectionHead text="Functional Dependencies & Normalization"/>,
-              <NormalizationAndDependencies />,
-              <FD_Cover_Equivalence_Decomposition />,
-              <RelationshipDegree />,
-              <Normalization />,
-              <FunctionalDependency />,
-              <NormalForms />,
-              <MultivaluedDependencies />,
+            <SectionHead text="Functional Dependencies & Normalization" />,
+            <NormalizationAndDependencies />,
+            <FD_Cover_Equivalence_Decomposition />,
+            <RelationshipDegree />,
+            <Normalization />,
+            <FunctionalDependency />,
+            <NormalForms />,
+            <MultivaluedDependencies />,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
