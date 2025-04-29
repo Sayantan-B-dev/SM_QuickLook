@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 import AnimateOnScroll from "../components/Animations/AnimateOnScroll";
+import SectionHead from "../features/subjects/dbms/SectionHead";
+import "../CSS/Dbms.css";
 
 import DBMSintro from "../features/subjects/dbms/notes/DBMSintro";
 import DBMSvsFile from "../features/subjects/dbms/notes/DBMSvsFile";
@@ -37,7 +39,10 @@ import {
   FullOuterJoin,
   CrossJoin,
 } from "../features/subjects/dbms/notes/joinsIntro";
-import {RelationalAlgebra,TupleCalculus} from "../features/subjects/dbms/notes/RelationalAlgebra";
+import {
+  RelationalAlgebra,
+  TupleCalculus,
+} from "../features/subjects/dbms/notes/RelationalAlgebra";
 import SQLCommands from "../features/subjects/dbms/notes/SQLCommands";
 import SQLCommands2 from "../features/subjects/dbms/notes/SQLCommands2";
 import AggregateFunctionsAndSubqueries from "../features/subjects/dbms/notes/AggregateFunctionsAndSubqueries";
@@ -50,13 +55,30 @@ import Indexing from "../features/subjects/dbms/notes/Indexing";
 import BTreeComponent from "../features/subjects/dbms/notes/BTreeComponent";
 import DatabaseModificationComponent from "../features/subjects/dbms/notes/DatabaseModificationComponent";
 import SqlLikeCommand from "../features/subjects/dbms/notes/SqlLikeCommand";
+import BasicPlsqlAndLoops from "../features/subjects/dbms/notes/BasicPlsqlAndLoops";
+import SQLFunctions from "../features/subjects/dbms/notes/SQLFunctions";
+import View_AggregateFunctionWithNull from "../features/subjects/dbms/notes/View_AggregateFunctionWithNull";
+import RAIDLevels from "../features/subjects/dbms/notes/RAIDLevels";
+import DBMSObjects from "../features/subjects/dbms/notes/DBMSObjects";
+import DataWarehouseBigData from "../features/subjects/dbms/notes/DataWarehouseBigData";
+import CoddsTwelveRules from "../features/subjects/dbms/notes/CoddsTwelveRules";
+import DbmsAndSqlConcepts from "../features/subjects/dbms/notes/DbmsAndSqlConcepts";
+import SequenceAndSqlQueryExecutionOrder from "../features/subjects/dbms/notes/SequenceAndSqlQueryExecutionOrder";
+import {
+  HadoopIntroduction,
+  BigDataVsSmallData,
+  ViewsComparison,
+  ForeignKeyDeleteBehavior,
+  ProceduresInPLSQL,
+  FetchDatePLSQL,
+  CursorInPLSQL,
+  WeakEntityExplanation,
+  RenameOperatorInRelationalAlgebra,
+  NonCorrelatedSubquery,
+  SqlOperators,
+} from "../features/subjects/dbms/notes/AdvancedDbmsTopics";
 
-
-
-
-
-
-
+import DataAbstractionExplained from "../features/subjects/dbms/notes/DataAbstractionExplained";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -81,6 +103,7 @@ function DatabaseManagementSystem() {
             <DBMSvsFile />,
             <ArchitectureTiers />,
             <SchemaArchitecture />,
+            <DataAbstractionExplained />,
             <DataIndependence />,
             <IntegrityConstraints />,
             <DBMSKeys />,
@@ -123,13 +146,50 @@ function DatabaseManagementSystem() {
             <BTreeComponent />,
             <DatabaseModificationComponent />,
             <SqlLikeCommand />,
+            <BasicPlsqlAndLoops />,
+            <SQLFunctions />,
+            <View_AggregateFunctionWithNull />,
+            <RAIDLevels />,
+            <DBMSObjects />,
+            <DataWarehouseBigData />,
+            <CoddsTwelveRules />,
+            <DbmsAndSqlConcepts />,
+            <SequenceAndSqlQueryExecutionOrder />,
+            <HadoopIntroduction />,
+            <BigDataVsSmallData />,
+            <ViewsComparison />,
+            <ForeignKeyDeleteBehavior />,
+            <ProceduresInPLSQL />,
+            <FetchDatePLSQL />,
+            <CursorInPLSQL />,
+            <WeakEntityExplanation />,
+            <RenameOperatorInRelationalAlgebra />,
+            <NonCorrelatedSubquery />,
+            <SqlOperators />,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
         </div>
       )}
 
-      {activeTab === "diploma" && <div className="diplomaDbms dbmsBox"></div>}
+      {activeTab === "diploma" && (
+        <div className="diplomaDbms dbmsBox">
+          {[
+            <SectionHead text="Database System Concepts & Architecture"/>,
+            <DBMSintro />,
+            <DBMSvsFile />,
+            <DataAbstractionExplained />,
+            <SQLCommands />,
+            <SQLCommands2 />,
+            <DataIndependence />,
+
+            <SectionHead text="Database System Concepts & Architecture"/>,
+
+          ].map((Component, index) => (
+            <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
+          ))}
+        </div>
+      )}
     </>
   );
 }
