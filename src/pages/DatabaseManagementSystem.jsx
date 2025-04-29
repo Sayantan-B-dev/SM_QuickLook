@@ -11,6 +11,7 @@ import ArchitectureTiers from "../features/subjects/dbms/notes/ArchitectureTiers
 import SchemaArchitecture from "../features/subjects/dbms/notes/SchemaArchitecture";
 import DataIndependence from "../features/subjects/dbms/notes/DataIndependence";
 import IntegrityConstraints from "../features/subjects/dbms/notes/IntegrityConstraints";
+import IntegrityConstraints2 from "../features/subjects/dbms/notes/IntegrityConstraints2";
 import DBMSKeys from "../features/subjects/dbms/notes/DBMSKeys";
 import CandidateKey from "../features/subjects/dbms/notes/CandidateKey";
 import PrimaryKey from "../features/subjects/dbms/notes/PrimaryKey";
@@ -77,8 +78,22 @@ import {
   NonCorrelatedSubquery,
   SqlOperators,
 } from "../features/subjects/dbms/notes/AdvancedDbmsTopics";
-
 import DataAbstractionExplained from "../features/subjects/dbms/notes/DataAbstractionExplained";
+import DbmsComponentsAndArchitecture from "../features/subjects/dbms/notes/DbmsComponentsAndArchitecture";
+import DbaRolesAndDataDictionary from "../features/subjects/dbms/notes/DbaRolesAndDataDictionary";
+import TypesOfDatabaseLanguages from "../features/subjects/dbms/notes/TypesOfDatabaseLanguages";
+import DataModelsAndComparativeStudy  from "../features/subjects/dbms/notes/DataModelsAndComparativeStudy";
+import EnhancedERModel from "../features/subjects/dbms/notes/EnhancedERModel";
+import RelationalModel from "../features/subjects/dbms/notes/RelationalModel";
+import RelationalAlgebraAndCalculus from "../features/subjects/dbms/notes/RelationalAlgebraAndCalculus";
+import SecurityAndAuthorization from "../features/subjects/dbms/notes/SecurityAndAuthorization";
+import SqlQueriesAndFunctions from "../features/subjects/dbms/notes/SqlQueriesAndFunctions";
+import NullValuesNestedComplexQueries from "../features/subjects/dbms/notes/NullValuesNestedComplexQueries";
+import PlSqlIntroduction from "../features/subjects/dbms/notes/PlSqlIntroduction";
+import NormalizationAndDependencies from "../features/subjects/dbms/notes/NormalizationAndDependencies";
+import MultivaluedDependencies  from "../features/subjects/dbms/notes/MultivaluedDependencies";
+
+
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -105,7 +120,12 @@ function DatabaseManagementSystem() {
             <SchemaArchitecture />,
             <DataAbstractionExplained />,
             <DataIndependence />,
+            <DbmsComponentsAndArchitecture />,
+            <DbaRolesAndDataDictionary />,
+            <TypesOfDatabaseLanguages />,
             <IntegrityConstraints />,
+            <DataModelsAndComparativeStudy />,
+            <RelationalModel />,
             <DBMSKeys />,
             <CandidateKey />,
             <PrimaryKey />,
@@ -114,10 +134,14 @@ function DatabaseManagementSystem() {
             <SuperKeyDetails />,
             <ERModel />,
             <ERAttributes />,
+            <SecurityAndAuthorization />,
+            <RelationalAlgebraAndCalculus />,
+            <EnhancedERModel />,
             <RelationshipDegree />,
             <Normalization />,
             <FunctionalDependency />,
             <NormalForms />,
+            <MultivaluedDependencies />,
             <MinimalCover />,
             <FD_Cover_Equivalence_Decomposition />,
             <JoinsIntroduction />,
@@ -136,8 +160,9 @@ function DatabaseManagementSystem() {
             <TupleCalculus />,
             <SQLCommands />,
             <SQLCommands2 />,
+            <SqlQueriesAndFunctions />,
             <AggregateFunctionsAndSubqueries />,
-            <PLsqlAndTransactions />,
+            <NormalizationAndDependencies />,
             <TransactionConcepts />,
             <ConcurrencyProblems />,
             <AdvancedScheduling />,
@@ -146,7 +171,6 @@ function DatabaseManagementSystem() {
             <BTreeComponent />,
             <DatabaseModificationComponent />,
             <SqlLikeCommand />,
-            <BasicPlsqlAndLoops />,
             <SQLFunctions />,
             <View_AggregateFunctionWithNull />,
             <RAIDLevels />,
@@ -159,6 +183,8 @@ function DatabaseManagementSystem() {
             <BigDataVsSmallData />,
             <ViewsComparison />,
             <ForeignKeyDeleteBehavior />,
+            <PLsqlAndTransactions />,
+            <BasicPlsqlAndLoops />,
             <ProceduresInPLSQL />,
             <FetchDatePLSQL />,
             <CursorInPLSQL />,
@@ -176,15 +202,65 @@ function DatabaseManagementSystem() {
         <div className="diplomaDbms dbmsBox">
           {[
             <SectionHead text="Database System Concepts & Architecture"/>,
-            <DBMSintro />,
-            <DBMSvsFile />,
-            <DataAbstractionExplained />,
-            <SQLCommands />,
-            <SQLCommands2 />,
-            <DataIndependence />,
+              <DBMSintro />,
+              <DBMSvsFile />,
+              <DataAbstractionExplained />,
+              <TypesOfDatabaseLanguages />,
+              <DataIndependence />,
+              <DbmsComponentsAndArchitecture />,
+              <DbaRolesAndDataDictionary />,
 
-            <SectionHead text="Database System Concepts & Architecture"/>,
+            <SectionHead text="Data Modeling Technique"/>,
+              <DataModelsAndComparativeStudy />,
+              <ERModel />,
+              <ERAttributes />,
+              <EnhancedERModel />,
 
+            <SectionHead text="Relational Data Model in Depth"/>,
+              <RelationalModel />,
+              <DBMSKeys />,
+              <CandidateKey />,
+              <PrimaryKey />,
+              <ForeignKey />,
+              <ForeignKeyOperations />,
+              <SuperKeyDetails />,
+              <IntegrityConstraints2 />,
+              <SecurityAndAuthorization />,
+              <RelationalAlgebraAndCalculus />,
+
+            <SectionHead text="Structured Query Language"/>,
+              <SqlQueriesAndFunctions />,
+              <SQLFunctions />,
+              <SQLCommands />,
+              <SQLCommands2 />,
+              <NullValuesNestedComplexQueries />,
+              <JoinsIntroduction />,
+              <NaturalJoin />,
+              <EquiJoin />,
+              <SelfJoin />,
+              <ConditionalJoin />,
+              <InnerJoin />,
+              <LeftJoin />,
+              <RightJoin />,
+              <LeftOuterJoin />,
+              <RightOuterJoin />,
+              <FullOuterJoin />,
+              <CrossJoin />,
+              <PlSqlIntroduction />,
+              <PLsqlAndTransactions />,
+              <BasicPlsqlAndLoops />,
+              <ProceduresInPLSQL />,
+              <FetchDatePLSQL />,
+              <CursorInPLSQL />,
+
+            <SectionHead text="Functional Dependencies & Normalization"/>,
+              <NormalizationAndDependencies />,
+              <FD_Cover_Equivalence_Decomposition />,
+              <RelationshipDegree />,
+              <Normalization />,
+              <FunctionalDependency />,
+              <NormalForms />,
+              <MultivaluedDependencies />,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
