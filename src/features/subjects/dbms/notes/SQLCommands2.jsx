@@ -204,10 +204,9 @@ function SQLCommands2() {
               need the ability to roll back.
             </p>
 
-            <li className="font-bold text-xl"  className="font-bold text-xl" >Can we rollback a TRUNCATE operation?</li>
+            <li className="font-bold text-xl" >Can we rollback a TRUNCATE operation?</li>
             <p className="text-grey-400 text-sm"  style={{ marginLeft: "2rem",marginBottom:"2rem" }} >
               <strong>TRUNCATE</strong> operations cannot be rolled back in most
-              cases. It’s a non-logged operation in terms of individual row
               deletion, and once it’s committed, the data is lost. However, in
               some databases (e.g., when used within a transaction in certain
               conditions), <strong>TRUNCATE</strong> can be rolled back.

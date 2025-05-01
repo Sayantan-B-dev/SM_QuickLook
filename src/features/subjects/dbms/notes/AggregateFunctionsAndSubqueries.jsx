@@ -55,7 +55,7 @@ function AggregateFunctionsAndSubqueries() {
               <br />
               FROM employees e
               <br />
-              WHERE salary > (
+              WHERE salary &gt; (
               <br />
               &nbsp;&nbsp;SELECT AVG(salary)
               <br />
@@ -88,7 +88,7 @@ function AggregateFunctionsAndSubqueries() {
                 <td className="p-2 border">The inner query is evaluated first, and its result is passed to the outer query for comparison.</td>
                 <td className="p-2 border">
                   <code>
-                    SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+                    SELECT name FROM employees WHERE salary &gt; (SELECT AVG(salary) FROM employees);
                   </code>
                 </td>
               </tr>
@@ -98,7 +98,7 @@ function AggregateFunctionsAndSubqueries() {
                 <td className="p-2 border">The subquery is evaluated once for each row in the outer query.</td>
                 <td className="p-2 border">
                   <code>
-                    SELECT name, salary FROM employees e WHERE salary > (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id);
+                    SELECT name, salary FROM employees e WHERE salary &gt; (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id);
                   </code>
                 </td>
               </tr>

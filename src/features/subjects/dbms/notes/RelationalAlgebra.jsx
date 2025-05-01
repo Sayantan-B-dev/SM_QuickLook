@@ -67,7 +67,7 @@ Result:
             <p><strong>Example:</strong></p>
             <pre className="whitespace-pre-wrap break-words p-4  text-white rounded-lg">
               <code>
-{`// Query: σ(Age > 21)(Students)
+{`// Query: σ(Age &gt; 21)(Students)
 Students Table:
 | Student_ID | Name   | Age | Major |
 |------------|--------|-----|-------|
@@ -303,7 +303,7 @@ Result:
               <p className="font-medium">Rewritten Query:</p>
               <pre className="whitespace-pre-wrap break-words p-4  text-white rounded-lg mt-2">
                 <code>
-                  σ<sub>Age > 21</sub>(Students)
+                  σ<sub>Age &gt 21</sub>(Students)
                 </code>
               </pre>
               <p className="mt-2 text-green-300" style={{marginBottom:"20px"}}>

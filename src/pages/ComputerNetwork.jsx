@@ -11,6 +11,24 @@ import PhysicalLayer from "../features/subjects/cn/notes/PhysicalLayer";
 import NetworkTopologies  from "../features/subjects/cn/notes/NetworkTopologies";
 import ManchesterEncoding from "../features/subjects/cn/notes/ManchesterEncoding";
 import NetworkDevices from "../features/subjects/cn/notes/NetworkDevices";
+import NetworkCables from "../features/subjects/cn/notes/NetworkCables";
+import Repeaters from "../features/subjects/cn/notes/Repeaters";
+import Hubs from "../features/subjects/cn/notes/Hubs.jsx";
+import Bridges  from "../features/subjects/cn/notes/Bridges";
+import Switches from "../features/subjects/cn/notes/Switches";
+import Routers from "../features/subjects/cn/notes/Routers";
+import CollisionVsBroadcast from "../features/subjects/cn/notes/CollisionVsBroadcast";
+import CircuitSwitching from "../features/subjects/cn/notes/CircuitSwitching";
+import PacketSwitching from "../features/subjects/cn/notes/PacketSwitching";
+import DatagramVsVirtualCircuitAndMessageSwitching from "../features/subjects/cn/notes/DatagramVsVirtualCircuitAndMessageSwitching";
+
+
+
+
+
+
+
+
 
 
 
@@ -49,6 +67,16 @@ function DatabaseManagementSystem() {
             <NetworkTopologies  />,
             <ManchesterEncoding />,
             <NetworkDevices />,
+            <NetworkCables />,
+            <Repeaters />,
+            <Hubs />,
+            <Bridges />,
+            <Switches />,
+            <Routers />,
+            <CollisionVsBroadcast />,
+            <CircuitSwitching />,
+            <PacketSwitching />,
+            <DatagramVsVirtualCircuitAndMessageSwitching />,
           ].map(
             (Component, index) => (
               <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>

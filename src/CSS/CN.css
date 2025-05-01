@@ -94,16 +94,22 @@
   margin-top: 4rem;
   }
   img{
-    width: 50%;
-    margin: auto;
+    width: 80%;
     object-fit: cover;
-    
+    margin-bottom: 10px;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     display: block;
+    transition: all 0.3s;
   }
-
-
+  .smallImg{
+    border: 1px solid #000000;
+    margin: 10px auto auto auto;
+    
+  }
+  .smallImg:hover{
+    transform: scale(2);
+  }
 
   .example-table,.cn-table {
     width: 100%;
@@ -135,19 +141,40 @@
   }
   
   .cnBtn {
-    padding: 0.5rem 1rem; /* py-2 px-4 */
-    background-color: #2563eb; /* blue-600 */
+    padding: 0.5rem 1rem; 
+    background-color: #2563eb; 
     color: white;
     border: none;
-    border-radius: 0.5rem; /* rounded-lg */
+    border-radius: 0.5rem; 
     cursor: pointer;
     transition: all 0.2s ease;
   }
   
   .cnBtn:hover {
-    background-color: #1d4ed8; /* blue-700 */
+    background-color: #1d4ed8; 
   }
-  
+  .infoBtn {
+    width: fit-content;
+    padding: 0.5rem 1rem; 
+    background-color: #3b82f6; 
+    color: white;
+    border: none;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition: all 0.5s ease;
+  } 
+  .infoBtn:hover {
+    scale: 1.2;
+    background-color: #2563eb; 
+    border-radius: 1rem;
+    box-shadow: 5px 5px  2px #0a0a0c;
+  }
+  .infoBtn:active {
+    scale: 1.1;
+    background-color: #1d4ed8; 
+    border-radius: 1rem;
+    box-shadow: 5px 5px  2px #0a0a0c;
+  }
  
   .step{
     margin-top: 1rem;
