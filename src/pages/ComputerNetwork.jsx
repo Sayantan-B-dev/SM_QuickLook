@@ -21,13 +21,13 @@ import CollisionVsBroadcast from "../features/subjects/cn/notes/CollisionVsBroad
 import CircuitSwitching from "../features/subjects/cn/notes/CircuitSwitching";
 import PacketSwitching from "../features/subjects/cn/notes/PacketSwitching";
 import DatagramVsVirtualCircuitAndMessageSwitching from "../features/subjects/cn/notes/DatagramVsVirtualCircuitAndMessageSwitching";
-
-
-
-
-
-
-
+import DatalinkLayerDetails from "../features/subjects/cn/notes/DatalinkLayerDetails";
+import DataLinkLayerProtocols from "../features/subjects/cn/notes/DataLinkLayerProtocols";
+import FramingAndErrorControl from "../features/subjects/cn/notes/FramingAndErrorControl";
+import CrcProtocol  from "../features/subjects/cn/notes/CrcProtocol";
+import HammingCode from "../features/subjects/cn/notes/HammingCode.jsx";
+import MediumAccessProtocols from "../features/subjects/cn/notes/MediumAccessProtocols.jsx";
+import CSMAVariants from "../features/subjects/cn/notes/CSMAVariants.jsx";
 
 
 
@@ -77,6 +77,13 @@ function DatabaseManagementSystem() {
             <CircuitSwitching />,
             <PacketSwitching />,
             <DatagramVsVirtualCircuitAndMessageSwitching />,
+            <DatalinkLayerDetails />,
+            <DataLinkLayerProtocols />,
+            <FramingAndErrorControl />,
+            <CrcProtocol />,
+            <HammingCode />,
+            <MediumAccessProtocols />,
+            <CSMAVariants />,
           ].map(
             (Component, index) => (
               <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
