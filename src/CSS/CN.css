@@ -46,7 +46,7 @@
   
   .cn-example {
     margin-top: 0.75rem;
-    color: #9ca3af;
+    color: #c4d4ee;
   }
   
   .cn-grid {
@@ -74,11 +74,11 @@
   }
   
   .structured h3 {
-    color: #34d399;
+    color: #a6d3c2;
   }
   
   .unstructured h3 {
-    color: #f472b6;
+    color: #f5a5ce;
   }
   
   @keyframes pulse {
@@ -99,8 +99,15 @@
     border-bottom-right-radius: 20px;
     border-bottom: #22d3ee 1px solid;
 }
+li{
+  padding-bottom: 15px;
+}
 
-
+li>strong{
+  font-size: large;
+  padding-right: 10px;
+  text-decoration: underline!important;
+}
   .cnBox{
   margin-top: 4rem;
   }

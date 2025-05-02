@@ -36,7 +36,7 @@ function TCP() {
           <h3 className="cn-subtitle">TCP Header Format</h3>
           <p className="cn-example">
             The structure of the TCP header is as follows:
-            <table className="example-table">
+            <table className="cn-table">
               <thead>
                 <tr>
                   <th>Field</th>

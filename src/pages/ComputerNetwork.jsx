@@ -44,10 +44,10 @@ import ARP from "../features/subjects/cn/notes/ARP"
 import NAT from "../features/subjects/cn/notes/NAT"
 import TransportLayer from "../features/subjects/cn/notes/TransportLayer"
 import TCP from "../features/subjects/cn/notes/TCP"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
+import TCPconnection from "../features/subjects/cn/notes/TCPconnection"
+import UDP from "../features/subjects/cn/notes/UDP"
+import SessionLayerDetails from "../features/subjects/cn/notes/SessionLayerDetails"
+import PresentationLayer from "../features/subjects/cn/notes/PresentationLayer"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
@@ -183,10 +183,10 @@ function DatabaseManagementSystem() {
             <NAT/>,
             <TransportLayer/>,
             <TCP/>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
+            <TCPconnection/>,
+            <UDP/>,
+            <SessionLayerDetails/>,
+            <PresentationLayer/>,
             // </>,
             // </>,
             // </>,
