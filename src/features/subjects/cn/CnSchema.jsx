@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../../../CSS/CN.css'
+import React from "react";
+import "../../../../CSS/CN.css";
 
 function CNDemo() {
   return (
@@ -13,20 +13,32 @@ function CNDemo() {
         </div>
         {/* <table className="example-table"></table> if any */}
 
-
         <div className="cn-section">
           <h2 className="cn-subtitle"></h2>
           <div className="cn-grid">
             <div className="cn-grid-item structured">
-            <div className="cn-grid-item unstructured">
+              <div className="cn-grid-item unstructured"></div>
             </div>
           </div>
         </div>
+        <div className="cn-section">
+        <h2 className="cn-subtitle">Diagram: Data Link Layer Functions</h2>
+        <img
+          src=""
+          alt=""
+        />
+      </div>
+      <button
+        className="infoBtn"
+        onClick={() =>
+          window.open("")
+        }
+      >
+        Know more
+      </button>
       </div>
     </div>
-    </div>
-    
-  )
+  );
 }
 
-export default CNDemo
+export default CNDemo;

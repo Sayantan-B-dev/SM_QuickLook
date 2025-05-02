@@ -30,8 +30,10 @@ function CSMAVariants() {
                 - If the channel is busy, the station continuously senses until
                 it becomes idle, then transmits.
                 <br />
-                 <strong>Advantage:</strong> Simple and ensures quick transmission.
-                <br /><strong>Disadvantage:</strong> High collision chance if multiple
+                <strong>Advantage:</strong> Simple and ensures quick
+                transmission.
+                <br />
+                <strong>Disadvantage:</strong> High collision chance if multiple
                 nodes wait for the channel to become free.
               </p>
               <img
@@ -50,9 +52,10 @@ function CSMAVariants() {
                 and checks again.
                 <br />
                 - If idle, it transmits immediately.
-                <br />
-                - <strong>Advantage:</strong> Reduces chances of collision.
-                <br />- <strong>Disadvantage:</strong> Increases delay and idle time.
+                <br />- <strong>Advantage:</strong> Reduces chances of
+                collision.
+                <br />- <strong>Disadvantage:</strong> Increases delay and idle
+                time.
               </p>
               <img
                 className="tooSmallImg"
@@ -74,10 +77,11 @@ function CSMAVariants() {
                 <br />
                 - If the channel is busy, it defers until idle again.
                 <br />
-                <strong>Advantage:</strong> Balances collision risk and delay using tunable
-                probability.
-                <br />**<strong>Disadvantage:</strong> More complex and less optimal if p is
-                not well chosen.
+                <strong>Advantage:</strong> Balances collision risk and delay
+                using tunable probability.
+                <br />
+                **<strong>Disadvantage:</strong> More complex and less optimal
+                if p is not well chosen.
               </p>
               <img
                 className="tooSmallImg"
@@ -90,7 +94,7 @@ function CSMAVariants() {
 
         <div className="cn-section">
           <h2 className="cn-subtitle">Comparison Table</h2>
-          <table className="example-table">
+          <table className="cn-table">
             <thead>
               <tr>
                 <th>Type</th>
@@ -125,7 +129,140 @@ function CSMAVariants() {
             </tbody>
           </table>
         </div>
-
+        <table className="cn-table">
+          <thead>
+            <tr className="cn-table-header">
+              <th>Aspect</th>
+              <th>
+                CSMA/CD (Carrier Sense Multiple Access with Collision Detection)
+              </th>
+              <th>
+                CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Principle</td>
+              <td>
+                Listens to the channel and transmits if idle. Detects collision
+                *during* transmission.
+              </td>
+              <td>
+                Listens to the channel and waits if busy. Tries to avoid
+                collision *before* transmission.
+              </td>
+            </tr>
+            <tr>
+              <td>Collision Handling</td>
+              <td>
+                Allows collisions to occur, then detects them and retransmits
+                after random delay.
+              </td>
+              <td>
+                Aims to avoid collisions by waiting and using acknowledgments;
+                doesn't allow collision to occur.
+              </td>
+            </tr>
+            <tr>
+              <td>Collision Detection</td>
+              <td>
+                Yes, it detects collisions using voltage level monitoring.
+              </td>
+              <td>No, as it avoids collisions; detection is not required.</td>
+            </tr>
+            <tr>
+              <td>Used In</td>
+              <td>Wired networks like Ethernet (especially half-duplex).</td>
+              <td>Wireless networks like Wi-Fi (IEEE 802.11).</td>
+            </tr>
+            <tr>
+              <td>Channel Access Mechanism</td>
+              <td>
+                Senses the medium and transmits; if a collision occurs, it
+                aborts and retries.
+              </td>
+              <td>
+                Senses the medium, then waits (backoff), and uses RTS/CTS
+                handshake to avoid collision.
+              </td>
+            </tr>
+            <tr>
+              <td>Efficiency</td>
+              <td>
+                High in low traffic, but decreases with network load due to
+                collisions.
+              </td>
+              <td>
+                Better in high-traffic wireless environments; reduces
+                retransmissions.
+              </td>
+            </tr>
+            <tr>
+              <td>Acknowledgement Usage</td>
+              <td>
+                Does not require ACK; assumes transmission success unless a
+                collision is detected.
+              </td>
+              <td>
+                Uses ACK to confirm successful data reception (mandatory in
+                wireless).
+              </td>
+            </tr>
+            <tr>
+              <td>Overhead</td>
+              <td>Lower overhead since no handshaking.</td>
+              <td>Higher overhead due to RTS/CTS and ACK control frames.</td>
+            </tr>
+            <tr>
+              <td>Media Type</td>
+              <td>
+                Wired only (electrical signals allow collision detection).
+              </td>
+              <td>
+                Wireless only (signal interference makes collision detection
+                impractical).
+              </td>
+            </tr>
+            <tr>
+              <td>Real-world Example</td>
+              <td>
+                Traditional Ethernet (IEEE 802.3) using coaxial cable or
+                hub-based systems.
+              </td>
+              <td>
+                Wi-Fi connections (IEEE 802.11b/g/n/ac) in home or public
+                wireless networks.
+              </td>
+            </tr>
+            <tr>
+              <td>Performance in High Traffic</td>
+              <td>Degrades significantly due to increased collisions.</td>
+              <td>Maintains performance better due to collision avoidance.</td>
+            </tr>
+            <tr>
+              <td>Implementation Complexity</td>
+              <td>Less complex; straightforward to implement.</td>
+              <td>More complex due to additional control frames and logic.</td>
+            </tr>
+            <tr>
+              <td>Latency</td>
+              <td>Higher latency due to collision detection and retries.</td>
+              <td>Lower latency in high traffic due to collision avoidance.</td>
+            </tr>
+            <tr>
+              <td>Scalability</td>
+              <td>Less scalable; performance degrades with more nodes.</td>
+              <td>More scalable; better performance with more nodes.</td>
+            </tr>
+          </tbody>
+        </table>
+              <div className="structured">
+                <img className="" src="https://ecomputernotes.com/images/CSMA-CA-Procedure.jpg" alt="" />
+              </div>
+              <div className="structured">
+                <img className="" src="https://media.geeksforgeeks.org/wp-content/uploads/22-8.png" alt="" />
+              </div>
         <button
           className="infoBtn"
           onClick={() =>

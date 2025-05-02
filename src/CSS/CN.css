@@ -118,7 +118,7 @@
     
   }
   .smallImg:hover{
-    transform: scale(2);
+    transform: scale(1.5);
   }
 
   .tooSmallImg{
@@ -127,7 +127,7 @@
     
   }
   .tooSmallImg:hover{
-    transform: scale(4);
+    transform: scale(3);
   }
 
   .example-table,.cn-table {

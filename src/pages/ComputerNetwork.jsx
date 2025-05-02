@@ -28,6 +28,89 @@ import CrcProtocol  from "../features/subjects/cn/notes/CrcProtocol";
 import HammingCode from "../features/subjects/cn/notes/HammingCode.jsx";
 import MediumAccessProtocols from "../features/subjects/cn/notes/MediumAccessProtocols.jsx";
 import CSMAVariants from "../features/subjects/cn/notes/CSMAVariants.jsx";
+import EthernetFrameFormat    from "../features/subjects/cn/notes/EthernetFrameFormat.jsx"; 
+import TokenRing from "../features/subjects/cn/notes/TokenRing.jsx";
+import NetworkLayer from "../features/subjects/cn/notes/NetworkLayer.jsx";
+import IPv4ClassInfo        from "../features/subjects/cn/notes/IPv4ClassInfo.jsx";
+import ClassfulVsClasslessIP from "../features/subjects/cn/notes/ClassfulVsClasslessIP.jsx";
+import ClassfulSubnettingAndVLSM from "../features/subjects/cn/notes/ClassfulSubnettingAndVLSM"
+import ClasslessSubnettingAndVLSM from "../features/subjects/cn/notes/ClasslessSubnettingAndVLSM"
+import IPv4HeaderFormat from "../features/subjects/cn/notes/IPv4HeaderFormat"
+import IPv6Header from "../features/subjects/cn/notes/IPv6Header"
+import RoutingProtocols from "../features/subjects/cn/notes/RoutingProtocols"
+import DistanceVectorRouting from "../features/subjects/cn/notes/DistanceVectorRouting"
+import LinkStateRouting from "../features/subjects/cn/notes/LinkStateRouting"
+import ARP from "../features/subjects/cn/notes/ARP"
+import NAT from "../features/subjects/cn/notes/NAT"
+import TransportLayer from "../features/subjects/cn/notes/TransportLayer"
+import TCP from "../features/subjects/cn/notes/TCP"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+// import  from "../features/subjects/cn/notes/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -84,6 +167,67 @@ function DatabaseManagementSystem() {
             <HammingCode />,
             <MediumAccessProtocols />,
             <CSMAVariants />,
+            <EthernetFrameFormat />,
+            <TokenRing />,
+            <NetworkLayer />,
+            <IPv4ClassInfo />,
+            <ClassfulVsClasslessIP />,
+            <ClassfulSubnettingAndVLSM/>,
+            <ClasslessSubnettingAndVLSM/>,
+            <IPv4HeaderFormat/>,
+            <IPv6Header/>,
+            <RoutingProtocols/>,
+            <DistanceVectorRouting/>,
+            <LinkStateRouting/>,
+            <ARP/>,
+            <NAT/>,
+            <TransportLayer/>,
+            <TCP/>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
+            // </>,
           ].map(
             (Component, index) => (
               <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
