@@ -64,19 +64,23 @@ import HttpVsHttps from "../features/subjects/cn/notes/HttpVsHttps"
 import NetworkSecurityProtocols from "../features/subjects/cn/notes/NetworkSecurityProtocols"
 import VPNComponent from "../features/subjects/cn/notes/VPNComponent"
 import CIDRComponent from "../features/subjects/cn/notes/CIDRComponent"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
+
+
+
+
+import NetworkHistoryComponent from "../features/subjects/cn/notes/NetworkHistoryComponent"
+import NetworkUsageComponent from "../features/subjects/cn/notes/NetworkUsageComponent"
+import NetworkProtocolsAndOrganizations from "../features/subjects/cn/notes/NetworkProtocolsAndOrganizations"
+import LineConfiguration from "../features/subjects/cn/notes/LineConfiguration"
+import NetworkTopology from "../features/subjects/cn/notes/NetworkTopology"
+import PeriodicAnalogSignals from "../features/subjects/cn/notes/PeriodicAnalogSignals"
+import NetworkCategories from "../features/subjects/cn/notes/NetworkCategories"
+import NetworkPerformance  from "../features/subjects/cn/notes/NetworkPerformance"
+import NetworkModels from "../features/subjects/cn/notes/NetworkModels"
+import TransmissionMedia from "../features/subjects/cn/notes/TransmissionMedia"
+import MultiplexingAndSwitching from "../features/subjects/cn/notes/MultiplexingAndSwitching"
+import DataLinkLayerDeepDive from "../features/subjects/cn/notes/DataLinkLayerDeepDive"
+import TransportLayerProtocols from "../features/subjects/cn/notes/TransportLayerProtocols"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
@@ -203,32 +207,6 @@ function DatabaseManagementSystem() {
             <NetworkSecurityProtocols/>,
             <VPNComponent/>,
             <CIDRComponent/>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
           ].map(
             (Component, index) => (
               <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
@@ -239,7 +217,69 @@ function DatabaseManagementSystem() {
 
       {activeTab === "diploma" && (
         <div className="diplomaDbms dbmsBox">
-          {[<SectionHead text="" />].map((Component, index) => (
+          {[
+            <WhatIsComputerNetwork />,
+            <NetworkHistoryComponent/>,
+            <NetworkUsageComponent/>,
+            <NetworkTypesAndModels />,
+            <NetworkProtocolsAndOrganizations/>,
+            <LineConfiguration/>,
+            <NetworkTopology/>,
+            <NetworkCategories/>,
+            <PeriodicAnalogSignals/>,
+            <NetworkPerformance/>,
+            <NetworkModels/>,
+            <TransmissionMedia/>,
+            <MultiplexingAndSwitching/>,
+            <PhysicalLayer />,
+            <NetworkTopologies />,
+            <NetworkDevices />,
+            <Repeaters />,
+            <Hubs />,
+            <Bridges />,
+            <Switches />,
+            <Routers />,
+            <CircuitSwitching />,
+            <PacketSwitching />,
+            <DatagramVsVirtualCircuitAndMessageSwitching />,
+            <DataLinkLayerDeepDive/>,
+            <DatalinkLayerDetails />,
+            <DataLinkLayerProtocols />,
+            <FramingAndErrorControl />,
+            <CrcProtocol />,
+            <HammingCode />,
+            <MediumAccessProtocols />,
+            <CSMAVariants />,
+            <EthernetFrameFormat />,
+            <TokenRing />,
+            <NetworkLayer />,
+            <IPv4ClassInfo />,
+            <ClassfulVsClasslessIP />,
+            <ClassfulSubnettingAndVLSM />,
+            <ClasslessSubnettingAndVLSM />,
+            <IPv4HeaderFormat />,
+            <IPv6Header />,
+            <RoutingProtocols />,
+            <DistanceVectorRouting />,
+            <TransportLayerProtocols/>,
+            <LinkStateRouting />,
+            <ARP />,
+            <NAT />,
+            <TransportLayer />,
+            <TCP />,
+            <TCPconnection />,
+            <UDP />,
+            <ApplicationLayer />,
+            <DNSLayer />,
+            <ApplicationLayerProtocols />,
+            <FtpSmtpHttpComponent />,
+            <PingVsLoopback/>,
+            <HttpVsHttps/>,
+            <NetworkSecurityProtocols />,
+            <VPNComponent />,
+            <CIDRComponent />
+            
+          ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
         </div>
