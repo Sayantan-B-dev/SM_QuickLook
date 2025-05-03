@@ -48,11 +48,11 @@ import TCPconnection from "../features/subjects/cn/notes/TCPconnection"
 import UDP from "../features/subjects/cn/notes/UDP"
 import SessionLayerDetails from "../features/subjects/cn/notes/SessionLayerDetails"
 import PresentationLayer from "../features/subjects/cn/notes/PresentationLayer"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
+import ApplicationLayer from "../features/subjects/cn/notes/ApplicationLayer"
+import DNSLayer from "../features/subjects/cn/notes/DNSLayer"
+import ApplicationLayerProtocols from "../features/subjects/cn/notes/ApplicationLayerProtocols"
+import FtpSmtpHttpComponent from "../features/subjects/cn/notes/FtpSmtpHttpComponent"
+import CryptographyComponent from "../features/subjects/cn/notes/CryptographyComponent"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
@@ -187,10 +187,11 @@ function DatabaseManagementSystem() {
             <UDP/>,
             <SessionLayerDetails/>,
             <PresentationLayer/>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
+            <ApplicationLayer/>,
+            <DNSLayer/>,
+            <ApplicationLayerProtocols/>,
+            <FtpSmtpHttpComponent/>,
+            <CryptographyComponent/>,
             // </>,
             // </>,
             // </>,

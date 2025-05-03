@@ -257,14 +257,14 @@ function PresentationLayer() {
         <div className="cn-section">
           <h2 className="cn-subtitle">Diagram: Presentation Layer in OSI</h2>
           <img
-            src="https://i.imgur.com/LRYXAnb.png"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20250127104353989955/2.webp"
             alt="Presentation Layer Diagram"
           />
         </div>
         <button
           className="infoBtn"
           onClick={() =>
-            window.open("https://en.wikipedia.org/wiki/Presentation_layer")
+            window.open("https://www.geeksforgeeks.org/presentation-layer-in-osi-model/")
           }
         >
           Know more
