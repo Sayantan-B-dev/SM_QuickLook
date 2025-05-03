@@ -1,6 +1,8 @@
 /* index.css */
 @import "tailwindcss";
-
+ul {
+  @apply list-none;
+}
 * {
   margin: 0;
   padding: 0;
