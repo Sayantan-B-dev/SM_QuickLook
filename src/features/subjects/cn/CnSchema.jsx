@@ -11,7 +11,7 @@ function CNDemo() {
           <h2 className="cn-subtitle"></h2>
           <p className="cn-example"></p>
         </div>
-        {/* <table className="example-table"></table> if any */}
+        {/* <table className="cn-table"></table> if any */}
 
         <div className="cn-section">
           <h2 className="cn-subtitle"></h2>
@@ -25,7 +25,6 @@ function CNDemo() {
         <h2 className="cn-subtitle">Diagram: Data Link Layer Functions</h2>
         <img
           src=""
-          alt=""
         />
       </div>
       <button

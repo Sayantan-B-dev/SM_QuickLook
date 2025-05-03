@@ -331,18 +331,13 @@ Client -> Server: TCP Close
               synchronization across devices.
             </p>
           </div>
-
-          <img
-            src="https://media.geeksforgeeks.org/wp-content/uploads/20220817110134/PersistentHTTP.png"
-            alt="HTTP persistence diagram"
-          />
         </div>
 
         <button
           className="infoBtn"
           onClick={() =>
             window.open(
-              "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+              "https://www.geeksforgeeks.org/protocols-application-layer/"
             )
           }
         >

@@ -53,17 +53,17 @@ import DNSLayer from "../features/subjects/cn/notes/DNSLayer"
 import ApplicationLayerProtocols from "../features/subjects/cn/notes/ApplicationLayerProtocols"
 import FtpSmtpHttpComponent from "../features/subjects/cn/notes/FtpSmtpHttpComponent"
 import CryptographyComponent from "../features/subjects/cn/notes/CryptographyComponent"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
-// import  from "../features/subjects/cn/notes/"
+import RSAAlgorithm from "../features/subjects/cn/notes/RSAAlgorithm"
+import CNDemoFirewall from "../features/subjects/cn/notes/CNDemoFirewall"
+import CNDemoOSILayersComparison from "../features/subjects/cn/notes/CNDemoOSILayersComparison"
+import LinuxNetworkingCommands from "../features/subjects/cn/notes/LinuxNetworkingCommands"
+import LatencyThroughputBandwidth from "../features/subjects/cn/notes/LatencyThroughputBandwidth"
+import FastVsGigabitEthernet from "../features/subjects/cn/notes/FastVsGigabitEthernet"
+import PingVsLoopback from "../features/subjects/cn/notes/PingVsLoopback"
+import HttpVsHttps from "../features/subjects/cn/notes/HttpVsHttps"
+import NetworkSecurityProtocols from "../features/subjects/cn/notes/NetworkSecurityProtocols"
+import VPNComponent from "../features/subjects/cn/notes/VPNComponent"
+import CIDRComponent from "../features/subjects/cn/notes/CIDRComponent"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
 // import  from "../features/subjects/cn/notes/"
@@ -192,17 +192,17 @@ function DatabaseManagementSystem() {
             <ApplicationLayerProtocols/>,
             <FtpSmtpHttpComponent/>,
             <CryptographyComponent/>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
-            // </>,
+            <RSAAlgorithm/>,
+            <CNDemoFirewall/>,
+            <CNDemoOSILayersComparison/>,
+            <LinuxNetworkingCommands/>,
+            <LatencyThroughputBandwidth/>,
+            <FastVsGigabitEthernet/>,
+            <PingVsLoopback/>,
+            <HttpVsHttps/>,
+            <NetworkSecurityProtocols/>,
+            <VPNComponent/>,
+            <CIDRComponent/>,
             // </>,
             // </>,
             // </>,

@@ -47,6 +47,14 @@
   .cn-example {
     margin-top: 0.75rem;
     color: #c4d4ee;
+
+  }
+  .cn-input{
+    padding: 5px;
+    border-radius: 10px;
+    color: #c4d4ee;
+    margin: 5px;
+    border-bottom: 1px solid #c4d4ee;
   }
   
   .cn-grid {
