@@ -28,6 +28,12 @@
     margin-bottom: 0.5rem;
     color: #a78bfa;
   }
+  .cn-smallTitle{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #a78bfa;
+  }
   .cn-sub{
     font-size: 1.2rem;
     font-weight: 500;
@@ -219,8 +225,8 @@ li>strong{
 
 
   li::before {
-    content: "🔹"; /* Add any emoji you like here */
-    font-size: 1.2em; /* Adjust size if needed */
+    content: "🔹"; 
+    font-size: 1.2em; 
   }
 
  
@@ -262,4 +268,36 @@ pre::-webkit-scrollbar-thumb {
     padding: 4px 8px;
     border-radius: 4px;
     font-family: monospace;
+  }
+  .cn-imgLink {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 4px; /* Subtle rounded corners */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transitions */
+  }
+  
+  
+  .cn-imgLink::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db; /* Blue underline color */
+    transition: width 0.3s ease; /* Animate the width */
+  }
+  
+  .cn-imgLink:hover::before {
+    width: 100%; /* Underline expands to full width on hover */
+  }
+  
+  li(where .cn-imgLink)::before {
+    content: "🔹"; 
+    font-size: 1.2em; 
   }
