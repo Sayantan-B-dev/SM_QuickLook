@@ -80,8 +80,9 @@ Process B:
   // Critical Section
   V(S)`}</pre>
         </div>
+          
 
-          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250106165446247852/semaphores.webp" alt="Semaphore Diagram" />
+          <img className="smallImg" src="https://media.geeksforgeeks.org/wp-content/uploads/20250106165446247852/semaphores.webp" alt="Semaphore Diagram" />
           <button
             className="infoBtn"
             onClick={() => window.open("https://www.geeksforgeeks.org/semaphores-in-process-synchronization/")}

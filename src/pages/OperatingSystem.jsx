@@ -32,22 +32,22 @@ import LockMechanisms from "../features/subjects/os/notes/LockMechanisms"
 import SemaphoreConcept from "../features/subjects/os/notes/SemaphoreConcept"
 import BinarySemaphore from "../features/subjects/os/notes/BinarySemaphore"
 import {ProducerConsumer,ReaderWriter,DiningPhilosophers} from "../features/subjects/os/notes/SynchronizationProblems"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
+import Deadlock from "../features/subjects/os/notes/Deadlock"
+import ResourceAllocationGraph from "../features/subjects/os/notes/ResourceAllocationGraph"
+import DeadlockHandling from "../features/subjects/os/notes/DeadlockHandling"
+import BankersAlgorithm from "../features/subjects/os/notes/BankersAlgorithm"
+import OSMemoryManagement from "../features/subjects/os/notes/OSMemoryManagement"
+import MemoryManagementTechniques from "../features/subjects/os/notes/MemoryManagementTechniques"
+import MemoryManagementPartitions from "../features/subjects/os/notes/MemoryManagementPartitions"
+import ProcessAllocation from "../features/subjects/os/notes/ProcessAllocation"
+import Paging from "../features/subjects/os/notes/Paging"
+import PageTableEntries from "../features/subjects/os/notes/PageTableEntries"
+import ThrashingAndMultiprogramming from "../features/subjects/os/notes/ThrashingAndMultiprogramming"
+import SegmentationAndPaging from "../features/subjects/os/notes/SegmentationAndPaging"
+import Overlay from "../features/subjects/os/notes/Overlay"
+import VirtualMemory from "../features/subjects/os/notes/VirtualMemory"
+import TLBComponent from "../features/subjects/os/notes/TLBComponent"
+import PageReplacementAlgorithms from "../features/subjects/os/notes/PageReplacementAlgorithms"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
@@ -108,6 +108,22 @@ function OperatingSystem() {
             <ProducerConsumer/>,
             <ReaderWriter/>,
             <DiningPhilosophers/>,
+            <Deadlock/>,
+            <ResourceAllocationGraph/>,
+            <DeadlockHandling/>,
+            <BankersAlgorithm/>,
+            <OSMemoryManagement/>,
+            <MemoryManagementTechniques/>,
+            <MemoryManagementPartitions/>,
+            <ProcessAllocation/>,
+            <Paging/>,
+            <PageTableEntries/>,
+            <ThrashingAndMultiprogramming/>,
+            <SegmentationAndPaging/>,
+            <Overlay/>,
+            <VirtualMemory/>,
+            <TLBComponent/>,
+            <PageReplacementAlgorithms/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}

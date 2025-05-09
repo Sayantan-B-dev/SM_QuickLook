@@ -12,7 +12,7 @@ function OSDemo() {
           <p className="os-example"></p>
         </div>
         {/* <table className="os-table"></table> if any */}
-
+        {/*use <pre>{``}</pre> like this */}
         <div className="os-section">
           <h2 className="os-subtitle"></h2>
           <div className="os-grid">
