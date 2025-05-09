@@ -160,7 +160,7 @@ li>strong{
     margin: 1rem 0;
     font-size: 16px;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: scroll;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
@@ -300,4 +300,21 @@ pre::-webkit-scrollbar-thumb {
 li.cn-imgLink::before {
   content: "🔹"; 
   font-size: 1.2em;
+}
+@media (max-width: 500px) {
+  .cn-section{
+    overflow: auto;
+
+  }
+  .cn-wrapper {
+    padding: 24px 0 24px 0 ;
+  }
+  .cn-card{
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .cn-table {
+    font-size: 14px; 
+  }
 }

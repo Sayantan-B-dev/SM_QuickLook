@@ -129,7 +129,8 @@ function CSMAVariants() {
             </tbody>
           </table>
         </div>
-        <table className="cn-table">
+      <div className="cn-section">
+                <table className="cn-table">
           <thead>
             <tr className="cn-table-header">
               <th>Aspect</th>
@@ -257,6 +258,7 @@ function CSMAVariants() {
             </tr>
           </tbody>
         </table>
+      </div>
               <div className="structured">
                 <img className="" src="https://ecomputernotes.com/images/CSMA-CA-Procedure.jpg" alt="" />
               </div>

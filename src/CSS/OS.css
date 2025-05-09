@@ -51,6 +51,7 @@
     box-shadow: 0px 0px 10px black;
     padding: 15px;
     border-radius: 10px;
+    overflow: auto;
   }
   
   .os-example {
@@ -160,10 +161,12 @@ li>strong{
     margin: 1rem 0;
     font-size: 16px;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: scroll;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
-  
+
+
+
   .example-table,.os-table thead {
     color: white;
   }
@@ -183,7 +186,7 @@ li>strong{
     transition: background-color 0.3s;
   }
   
-  .cnBtn {
+  .osBtn {
     padding: 0.5rem 1rem; 
     background-color: #2563eb; 
     color: white;
@@ -193,7 +196,7 @@ li>strong{
     transition: all 0.2s ease;
   }
   
-  .cnBtn:hover {
+  .osBtn:hover {
     background-color: #1d4ed8; 
   }
   .infoBtn {
@@ -300,4 +303,13 @@ pre::-webkit-scrollbar-thumb {
 li.os-imgLink::before {
   content: "🔹"; 
   font-size: 1.2em;
+}
+@media (max-width: 500px) {
+  .os-wrapper {
+    padding: 24px 0 24px 0 ;
+  }
+  .os-card{
+    width: 95%;
+    
+  }
 }

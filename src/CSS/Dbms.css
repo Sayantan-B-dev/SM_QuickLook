@@ -213,3 +213,21 @@
     border-bottom-left-radius: 5px;
     border-bottom: 1px solid #22d3ee;
   }
+
+  @media (max-width: 500px) {
+  .dbms-section{
+    overflow: auto;
+
+  }
+  .dbms-wrapper {
+    padding: 24px 0 24px 0 ;
+  }
+  .dbms-card{
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .dbms-table {
+    font-size: 14px; 
+  }
+}

@@ -105,13 +105,13 @@ function DatabaseManagementSystem() {
       <div className="parentHeader">
         <div className="CategoryCn justify-center flex flex-col gap-2 top-0 z-10">
           <button
-            className="allBtn dbmsBtn"
+            className="allBtn cnBtn"
             onClick={() => setActiveTab("all")}
           >
             All
           </button>
           <button
-            className="diplomaBtn dbmsBtn"
+            className="diplomaBtn cnBtn"
             onClick={() => setActiveTab("diploma")}
           >
             Diploma

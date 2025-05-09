@@ -17,7 +17,11 @@
   z-index: 1000;
   box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
 }
-
+@media (max-width: 500px) {
+  .navbar  {
+    display: none; 
+  }
+}
 .logo-container {
   display: flex;
   align-items: center;
