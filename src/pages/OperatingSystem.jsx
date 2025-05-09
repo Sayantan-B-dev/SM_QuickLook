@@ -48,6 +48,19 @@ import Overlay from "../features/subjects/os/notes/Overlay"
 import VirtualMemory from "../features/subjects/os/notes/VirtualMemory"
 import TLBComponent from "../features/subjects/os/notes/TLBComponent"
 import PageReplacementAlgorithms from "../features/subjects/os/notes/PageReplacementAlgorithms"
+import DiskArchitecture from "../features/subjects/os/notes/DiskArchitecture"
+import DiskAccessTime from "../features/subjects/os/notes/DiskAccessTime"
+import DiskScheduling from "../features/subjects/os/notes/DiskScheduling"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
+// import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
@@ -124,6 +137,9 @@ function OperatingSystem() {
             <VirtualMemory/>,
             <TLBComponent/>,
             <PageReplacementAlgorithms/>,
+            <DiskArchitecture/>,
+            <DiskAccessTime/>,
+            <DiskScheduling/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
