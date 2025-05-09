@@ -26,12 +26,12 @@ import RoundRobin from "../features/subjects/os/notes/RoundRobin"
 import PrioritySchedulingExplanation from "../features/subjects/os/notes/PrioritySchedulingExplanation"
 import MixedBurstTimeExample from "../features/subjects/os/notes/MixedBurstTimeExample"
 import SchedulingExplanation from "../features/subjects/os/notes/SchedulingExplanation"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
+import ProcessSynchronizationExplanation from "../features/subjects/os/notes/ProcessSynchronizationExplanation"
+import ProducerConsumerCriticalSection from "../features/subjects/os/notes/ProducerConsumerCriticalSection"
+import LockMechanisms from "../features/subjects/os/notes/LockMechanisms"
+import SemaphoreConcept from "../features/subjects/os/notes/SemaphoreConcept"
+import BinarySemaphore from "../features/subjects/os/notes/BinarySemaphore"
+import {ProducerConsumer,ReaderWriter,DiningPhilosophers} from "../features/subjects/os/notes/SynchronizationProblems"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
@@ -100,6 +100,14 @@ function OperatingSystem() {
             <PrioritySchedulingExplanation/>,
             <MixedBurstTimeExample/>,
             <SchedulingExplanation/>,
+            <ProcessSynchronizationExplanation/>,
+            <ProducerConsumerCriticalSection/>,
+            <LockMechanisms/>,
+            <SemaphoreConcept/>,
+            <BinarySemaphore/>,
+            <ProducerConsumer/>,
+            <ReaderWriter/>,
+            <DiningPhilosophers/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
