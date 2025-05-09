@@ -72,9 +72,8 @@ import OSCryptographyFirewall from "../features/subjects/os/notes/OSCryptography
 import OSTableComparisons from "../features/subjects/os/notes/OSTableComparisons"
 import ShortNotesOSConcepts from "../features/subjects/os/notes/ShortNotesOSConcepts"
 import LinkerLoaderObjectFile from "../features/subjects/os/notes/LinkerLoaderObjectFile"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
+
+import DiplomaOS from "../features/subjects/os/notes/DiplomaOS";
 
 function OperatingSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -174,8 +173,7 @@ function OperatingSystem() {
       {activeTab === "diploma" && (
         <div className="diplomaOs">
           {[
-            <OSFunctionsOverview />,
-
+            <DiplomaOS/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}

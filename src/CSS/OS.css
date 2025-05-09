@@ -137,10 +137,17 @@ li>strong{
     display: block;
     transition: all 0.3s;
   }
+  .tinyImg{
+        box-shadow: 5px 5px 5px rgba(48, 48, 48, 0.767);
+  }
+  .tinyImg:hover{
+    scale: 1.5;
+    transform: translateX(20px);
+    box-shadow: -5px 5px 5px rgba(48, 48, 48, 0.767);
+  }
   .smallImg{
     border: 1px solid #000000;
     margin: 20px auto auto auto;
-
   }
   .smallImg2{
         border: 1px solid #000000;
@@ -174,7 +181,23 @@ li>strong{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
+.smallItems{
+  box-shadow: 5px 5px 5px #333;
+  border:1px #7479c7 solid;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding: 0;
+}
+.smallItems:hover{
+  scale: 1.05;
+    box-shadow: -5px 5px 5px rgba(48, 48, 48, 0.767);
 
+}
 
   .example-table,.os-table thead {
     color: white;
@@ -293,9 +316,24 @@ pre::-webkit-scrollbar-thumb {
     border-radius: 4px; /* Subtle rounded corners */
     transition: color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transitions */
   }
+  .os-imgLink2{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    margin:0px 0px 10px 0px;
+    transition: all 0.3s ease,border-bottom 0.01s ease; 
+    border-bottom: 1px solid #3498db;
+  }
+    .os-imgLink2:hover{
+    border-bottom: 0px solid black;
+  }
+
   
-  
-  .os-imgLink::before {
+  .os-imgLink::before,.os-imgLink2::before {
     content: '';
     position: absolute;
     width: 0%;
@@ -306,7 +344,7 @@ pre::-webkit-scrollbar-thumb {
     transition: width 0.3s ease; /* Animate the width */
   }
   
-  .os-imgLink:hover::before {
+  .os-imgLink:hover::before,.os-imgLink2:hover::before {
     width: 100%; /* Underline expands to full width on hover */
   }
   
@@ -322,4 +360,49 @@ li.os-imgLink::before {
     width: 95%;
     
   }
+}
+
+
+/* Modal styles */
+.image-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.473);
+  z-index: 1000;
+  scale: 1.5;
+}
+
+/* Modal content (image container) */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Full image styling */
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
 }
