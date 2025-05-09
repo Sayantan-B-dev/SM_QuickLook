@@ -21,20 +21,10 @@ function OSDemo() {
             </div>
           </div>
         </div>
-        <div className="os-section">
-        <h2 className="os-subtitle">Diagram: Data Link Layer Functions</h2>
-        <img
-          src=""
-        />
-      </div>
-      <button
-        className="infoBtn"
-        onClick={() =>
-          window.open("")
-        }
-      >
-        Know more
-      </button>
+          <img src="" />
+        <button className="infoBtn" onClick={() => window.open("")}>
+          Know more
+        </button>
       </div>
     </div>
   );

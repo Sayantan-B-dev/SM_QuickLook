@@ -139,11 +139,20 @@ li>strong{
   }
   .smallImg{
     border: 1px solid #000000;
-    margin: 10px auto auto auto;
-    
+    margin: 20px auto auto auto;
+
+  }
+  .smallImg2{
+        border: 1px solid #000000;
+    margin: 20px auto auto auto;
+    z-index: 500;
   }
   .smallImg:hover{
     transform: scale(1.5);
+  }
+  .smallImg2:hover{
+    transform: translateY(-50px);
+    scale: 1.2;
   }
 
   .tooSmallImg{
@@ -208,6 +217,7 @@ li>strong{
     border-radius: 0.5rem; 
     cursor: pointer;
     transition: all 0.5s ease;
+    margin-top: 10px;
   } 
   .infoBtn:hover {
     scale: 1.2;

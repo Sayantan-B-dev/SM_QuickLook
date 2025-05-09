@@ -205,6 +205,8 @@ li>strong{
     border-radius: 0.5rem; 
     cursor: pointer;
     transition: all 0.5s ease;
+    margin-top: 10px;
+
   } 
   .infoBtn:hover {
     scale: 1.2;
