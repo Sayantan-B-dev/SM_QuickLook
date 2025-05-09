@@ -93,7 +93,7 @@ Gigabit Ethernet (1000BASE-T):
               <tr>
                 <td>Max Distance</td>
                 <td>100 meters (copper)</td>
-                <td>100m (copper), >550m to 10km (fiber)</td>
+                <td>100m (copper), &gt;550m to 10km (fiber)</td>
               </tr>
               <tr>
                 <td>Duplex Mode</td>
