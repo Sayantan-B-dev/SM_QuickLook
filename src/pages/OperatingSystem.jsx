@@ -17,15 +17,15 @@ import ForkSystemCall from "../features/subjects/os/notes/ForkSystemCall"
 import UserVsKernelMode from "../features/subjects/os/notes/UserVsKernelMode"
 import ProcessVsThread from "../features/subjects/os/notes/ProcessVsThread"
 import UserVsKernelLevelThreads from "../features/subjects/os/notes/UserVsKernelLevelThreads"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
-// import  from "../features/subjects/os/notes/"
+import SchedulingAlgorithms from "../features/subjects/os/notes/SchedulingAlgorithms"
+import SchedulingMetricsExplanatio from "../features/subjects/os/notes/SchedulingMetricsExplanatio"
+import FCFSExplanation from "../features/subjects/os/notes/FCFSExplanation"
+import SJFNonPreemptiveExplanation from "../features/subjects/os/notes/SJFNonPreemptiveExplanation"
+import SRTFExplanation from "../features/subjects/os/notes/SRTFExplanation"
+import RoundRobin from "../features/subjects/os/notes/RoundRobin"
+import PrioritySchedulingExplanation from "../features/subjects/os/notes/PrioritySchedulingExplanation"
+import MixedBurstTimeExample from "../features/subjects/os/notes/MixedBurstTimeExample"
+import SchedulingExplanation from "../features/subjects/os/notes/SchedulingExplanation"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
 // import  from "../features/subjects/os/notes/"
@@ -91,6 +91,15 @@ function OperatingSystem() {
             <UserVsKernelMode/>,
             <ProcessVsThread/>,
             <UserVsKernelLevelThreads/>,
+            <SchedulingAlgorithms/>,
+            <SchedulingMetricsExplanatio/>,
+            <FCFSExplanation/>,
+            <SJFNonPreemptiveExplanation/>,
+            <SRTFExplanation/>,
+            <RoundRobin/>,
+            <PrioritySchedulingExplanation/>,
+            <MixedBurstTimeExample/>,
+            <SchedulingExplanation/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}

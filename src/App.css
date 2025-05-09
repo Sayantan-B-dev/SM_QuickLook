@@ -4,3 +4,14 @@
   width: 100%;
   min-height: 100vh;
 }
+iframe{
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #111;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  iframe{
+    width: 100%;
+  }
+}

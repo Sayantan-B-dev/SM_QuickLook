@@ -186,7 +186,7 @@ li>strong{
     transition: background-color 0.3s;
   }
   
-  .osBtn {
+  .Btn {
     padding: 0.5rem 1rem; 
     background-color: #2563eb; 
     color: white;
@@ -196,7 +196,7 @@ li>strong{
     transition: all 0.2s ease;
   }
   
-  .osBtn:hover {
+  .Btn:hover {
     background-color: #1d4ed8; 
   }
   .infoBtn {
