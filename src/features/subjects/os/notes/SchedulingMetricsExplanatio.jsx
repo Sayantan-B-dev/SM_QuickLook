@@ -55,13 +55,13 @@ Process | AT | BT | CT | TAT | WT | RT
 
         <div className="os-section">
           <h2 className="os-subtitle">Diagram: Scheduling Flow</h2>
-          <pre className="os-example">
+          <pre className="os-example">{`
 +----------+       +--------+       +-----------+       +-----------+
 |  Arrival | ----> |  Ready | --->  | Execution | --->  | Completion|
 +----------+       +--------+       +-----------+       +-----------+
       |                               ^   |
       |                               |   v
-      +-----------------------------+ Waiting
+      +-----------------------------+ Waiting`}
           </pre>
         </div>
 
