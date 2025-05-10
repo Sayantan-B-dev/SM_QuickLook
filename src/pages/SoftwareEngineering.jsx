@@ -6,7 +6,7 @@ import SectionHead from "../components/SectionHead";
 import "../CSS/SE.css";
 import "../CSS/Button.css";
 
-// import from "../features/subjects/se/notes/"
+import DiplomaSE from "../features/subjects/se/notes/DiplomaSE"
 
 function OperatingSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -41,6 +41,7 @@ function OperatingSystem() {
       {activeTab === "diploma" && (
         <div className="diplomaOs">
           {[
+            <DiplomaSE/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
