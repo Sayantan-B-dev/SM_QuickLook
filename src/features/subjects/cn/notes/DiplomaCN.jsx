@@ -1054,7 +1054,7 @@ function DiplomaCN() {
   return (
     <div className="cn-wrapper">
       <div className="cn-card">
-        <div className="cn-title">Diploma CN</div>
+        <div className="cn-title">Diploma - Computer network</div>
 
         {units.map((unit, uIndex) => (
           <div key={uIndex} className="cn-section cursor-pointer">

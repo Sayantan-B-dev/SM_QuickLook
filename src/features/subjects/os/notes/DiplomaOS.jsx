@@ -528,7 +528,7 @@ const [openImage, setOpenImage] = useState(null);
   return (
     <div className="os-wrapper">
       <div className="os-card">
-        <div className="os-title">Diploma CN</div>
+        <div className="os-title">Diploma - Operating System</div>
 
         {units.map((unit, uIndex) => (
           <div key={uIndex} className="os-section cursor-pointer">

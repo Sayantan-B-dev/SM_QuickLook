@@ -79,6 +79,9 @@
     padding: 16px;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between  ;
   }
   .se-grid-item:hover {
     background-color: #475569;
@@ -90,7 +93,6 @@
     font-weight: bold;
     margin-bottom: 8px;
   }
-  
   .structured h3 {
     color: #a6d3c2;
   }

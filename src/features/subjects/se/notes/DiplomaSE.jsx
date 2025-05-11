@@ -565,7 +565,7 @@ function DiplomaSE() {
   return (
     <div className="se-wrapper">
       <div className="se-card">
-        <div className="se-title">Diploma CN</div>
+        <div className="se-title">Diploma - Software Engineering</div>
 
         {units.map((unit, uIndex) => (
           <div key={uIndex} className="se-section cursor-pointer">

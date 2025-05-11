@@ -38,49 +38,11 @@ import BoundaryValueTesting from "../features/subjects/se/notes/BoundaryValueTes
 import SoftwareMaintenance from "../features/subjects/se/notes/SoftwareMaintenance"
 import ReverseEngineeringAndCASE from "../features/subjects/se/notes/ReverseEngineeringAndCASE"
 import PerformanceAndRegressionTesting from "../features/subjects/se/notes/PerformanceAndRegressionTesting"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
+import UMLDiagrams from "../features/subjects/se/notes/UMLDiagrams"
+import ProjectSizeEstimation from "../features/subjects/se/notes/ProjectSizeEstimation"
+import FunctionPointAnalysis from "../features/subjects/se/notes/FunctionPointAnalysis"
+import AggregationVsComposition from "../features/subjects/se/notes/AggregationVsComposition"
+
 
 
 
@@ -143,33 +105,11 @@ function OperatingSystem() {
             <SoftwareMaintenance/>,
             <ReverseEngineeringAndCASE/>,
             <PerformanceAndRegressionTesting/>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
+            <UMLDiagrams/>,
+            <ProjectSizeEstimation/>,
+            <FunctionPointAnalysis/>,
+            <AggregationVsComposition/>,
+            
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
