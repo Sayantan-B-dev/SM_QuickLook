@@ -184,7 +184,7 @@ li>strong{
     transform: scale(3);
   }
 
-  .example-table,.se-table {
+  .example-table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
@@ -192,6 +192,11 @@ li>strong{
     border-radius: 8px;
     overflow: scroll;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .se-table {
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 8px;
+
   }
 
 .smallItems{
@@ -214,6 +219,7 @@ li>strong{
 
   .example-table,.se-table thead {
     color: white;
+    background-color: #1a222e;
   }
   
   .example-table,.se-table th,

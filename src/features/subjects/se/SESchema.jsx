@@ -21,10 +21,10 @@ function SEDemo() {
             </div>
           </div>
         </div>
-        <img src="" />
-        <button className="infoBtn" onClick={() => window.open("")}>
+        {/*<img src="" /> INSTEAD THIS IMAGE, MAKE DIAGRAM YOURSELF USING THE PRE METHOD I MENTIONED  <pre>{``}</pre>*/}
+        {/*IGNORE THIS! <button className="infoBtn" onClick={() => window.open("")}>
           Know more
-        </button>
+        </button> */}
       </div>
     </div>
   );
