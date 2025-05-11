@@ -283,8 +283,22 @@ pre::-webkit-scrollbar-thumb {
     transition: color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transitions */
   }
   
-  
-  .cn-imgLink::before {
+    .cn-imgLink2{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    margin:0px 0px 10px 0px;
+    transition: all 0.3s ease,border-bottom 0.01s ease; 
+    border-bottom: 1px solid #3498db;
+  }
+    .cn-imgLink2:hover{
+    border-bottom: 0px solid black;
+  }
+  .cn-imgLink::before ,.cn-imgLink2::before{
     content: '';
     position: absolute;
     width: 0%;
@@ -295,7 +309,7 @@ pre::-webkit-scrollbar-thumb {
     transition: width 0.3s ease; /* Animate the width */
   }
   
-  .cn-imgLink:hover::before {
+  .cn-imgLink:hover::before ,.cn-imgLink2:hover::before {
     width: 100%; /* Underline expands to full width on hover */
   }
   

@@ -556,7 +556,7 @@ const [openImage, setOpenImage] = useState(null);
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                {link.title}🔗
+                               🔗{link.title}
                               </a>
 
                               <img
@@ -581,7 +581,7 @@ const [openImage, setOpenImage] = useState(null);
       {/* Modal to show the full image */}
       {openImage && (
         <div className="image-modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-content" onClick={closeModal}>
             <span className="close" onClick={closeModal}>&times;</span>
             <img className="modal-image" src={openImage} alt="Full view" />
           </div>
