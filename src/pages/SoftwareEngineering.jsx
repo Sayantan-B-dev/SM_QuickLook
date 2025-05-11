@@ -19,25 +19,25 @@ import SpiralModel from "../features/subjects/se/notes/SpiralModel"
 import RADModel from "../features/subjects/se/notes/RADModel"
 import AgileModel from "../features/subjects/se/notes/AgileModel"
 import SDLCComparison from "../features/subjects/se/notes/SDLCComparison"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
-//import  from "../features/subjects/se/notes/"
+import Scrum from "../features/subjects/se/notes/Scrum"
+import RequirementEngineering from "../features/subjects/se/notes/RequirementEngineering"
+import SoftwareRequirementSpecification from "../features/subjects/se/notes/SoftwareRequirementSpecification"
+import DataFlowDiagram from "../features/subjects/se/notes/DataFlowDiagram"
+import DesignApproachComparison from "../features/subjects/se/notes/DesignApproachComparison"
+import SoftwareProjectManagement from "../features/subjects/se/notes/SoftwareProjectManagement"
+import RiskManagement from "../features/subjects/se/notes/RiskManagement"
+import COCOMO from "../features/subjects/se/notes/COCOMO"
+import COCOMOModels from "../features/subjects/se/notes/COCOMOModels"
+import CPMAndPERT from "../features/subjects/se/notes/CPMAndPERT"
+import VerificationVsValidation from "../features/subjects/se/notes/VerificationVsValidation"
+import SoftwareTesting from "../features/subjects/se/notes/SoftwareTesting"
+import CohesionAndCoupling from "../features/subjects/se/notes/CohesionAndCoupling"
+import SoftwareTestingTypes from "../features/subjects/se/notes/SoftwareTestingTypes"
+import WhiteBoxTechniques from "../features/subjects/se/notes/WhiteBoxTechniques"
+import BoundaryValueTesting from "../features/subjects/se/notes/BoundaryValueTesting"
+import SoftwareMaintenance from "../features/subjects/se/notes/SoftwareMaintenance"
+import ReverseEngineeringAndCASE from "../features/subjects/se/notes/ReverseEngineeringAndCASE"
+import PerformanceAndRegressionTesting from "../features/subjects/se/notes/PerformanceAndRegressionTesting"
 //import  from "../features/subjects/se/notes/"
 //import  from "../features/subjects/se/notes/"
 //import  from "../features/subjects/se/notes/"
@@ -123,25 +123,26 @@ function OperatingSystem() {
             <SpiralModel/>,
             <RADModel/>,
             <AgileModel/>,
+            <Scrum/>,
             <SDLCComparison/>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
-            //</>,
+            <RequirementEngineering/>,
+            <SoftwareRequirementSpecification/>,
+            <DataFlowDiagram/>,
+            <DesignApproachComparison/>,
+            <SoftwareProjectManagement/>,
+            <RiskManagement/>,
+            <COCOMO/>,
+            <COCOMOModels/>,
+            <CPMAndPERT/>,
+            <VerificationVsValidation/>,
+            <SoftwareTesting/>,
+            <CohesionAndCoupling/>,
+            <SoftwareTestingTypes/>,
+            <WhiteBoxTechniques/>,
+            <BoundaryValueTesting/>,
+            <SoftwareMaintenance/>,
+            <ReverseEngineeringAndCASE/>,
+            <PerformanceAndRegressionTesting/>,
             //</>,
             //</>,
             //</>,

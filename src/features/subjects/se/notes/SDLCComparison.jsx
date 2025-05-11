@@ -8,9 +8,7 @@ function SDLCComparison() {
         <h1 className="se-title">Comparison of SDLC Models</h1>
 
         <div className="se-section">
-          <h2 className="se-subtitle">Comparison Table</h2>
-          <div className="se-grid">
-              <table className="se-table">
+              <table className="se-table" style={{fontSize:"10px"}}>
                 <thead>
                   <tr>
                     <th>Aspect</th>
@@ -95,7 +93,6 @@ function SDLCComparison() {
               </table>
             </div>
           </div>
-        </div>
     </div>
   );
 }
