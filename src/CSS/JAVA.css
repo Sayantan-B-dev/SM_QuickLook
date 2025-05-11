@@ -1,0 +1,388 @@
+.java-wrapper {
+  padding: 24px;
+  width: 100%;
+}
+
+.java-card {
+  width: 80%;
+  margin: auto;
+  background-color: #1f2937;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.java-card2 {
+  width: 90%;
+  margin: auto;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow:inset 0 10px 25px rgba(0, 0, 0, 0.5);
+  height:200px;
+  overflow: auto;
+}
+.java-card2::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+.java-card2::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px; 
+  border: 1px solid transparent;
+}
+
+.java-card2::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  outline: 1px solid white;
+}
+
+
+.java-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #22d3ee;
+  animation: pulse 1.5s infinite;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.java-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #a78bfa;
+}
+.java-smallTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #a78bfa;
+}
+.java-sub {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #a78bfa;
+  border-bottom: 1px solid #5d779c;
+}
+.java-sub:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+.java-section {
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 10px black;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+
+.java-example {
+  margin-top: 0.75rem;
+  color: #c4d4ee;
+}
+.java-input {
+  padding: 5px;
+  border-radius: 10px;
+  color: #c4d4ee;
+  margin: 5px;
+  border-bottom: 1px solid #c4d4ee;
+}
+
+.java-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.java-unit-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.java-grid-item {
+  background-color: #374151;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+.java-grid-item:hover {
+  background-color: #475569;
+  transition: all 0.3s;
+}
+
+.java-grid-item h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.structured h3 {
+  color: #a6d3c2;
+}
+
+.unstructured h3 {
+  color: #f5a5ce;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.CategoryOs {
+  position: fixed;
+  width: fit-content;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(5px);
+  border-bottom-right-radius: 20px;
+  border-bottom: #22d3ee 1px solid;
+}
+li {
+  padding-bottom: 15px;
+}
+
+li > strong {
+  font-size: large;
+  padding-right: 10px;
+  text-decoration: underline !important;
+}
+.cnBox {
+  margin-top: 4rem;
+}
+img {
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  display: block;
+  transition: all 0.3s;
+}
+.tinyImgJava {
+  margin: 10px auto 10px auto;
+  width: 90%;
+  box-shadow: 5px 5px 5px rgba(48, 48, 48, 0.767);
+  z-index: 23;
+}
+.tinyImgJava:hover {
+  scale: 1.01;
+  transform: translateY(-5px);
+  box-shadow: -5px 5px 5px rgba(48, 48, 48, 0.767);
+  cursor: zoom-in;
+}
+.smallImg {
+  border: 1px solid #000000;
+  margin: 20px auto auto auto;
+}
+.smallImg2 {
+  border: 1px solid #000000;
+  margin: 20px auto auto auto;
+  z-index: 500;
+}
+.smallImg:hover {
+  transform: scale(1.5);
+}
+.smallImg2:hover {
+  transform: translateY(-50px);
+  scale: 1.2;
+}
+
+.tooSmallImg {
+  border: 1px solid #000000;
+  margin: 10px auto auto auto;
+}
+.tooSmallImg:hover {
+  transform: scale(3);
+}
+
+.example-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 16px;
+  border-radius: 8px;
+  overflow: scroll;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.java-table {
+  background-color: rgba(255, 255, 255, 0.082);
+  border-radius: 8px;
+}
+
+.itemJava {
+  box-shadow: 5px 5px 5px #333;
+  padding-bottom: 10px;
+  border: 1px #7479c7 solid;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: fit-content;
+  overflow: auto;
+}
+.itemJava:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(240, 56, 56, 0.767)
+}
+
+.example-table,
+.java-table thead {
+  color: white;
+  background-color: #1a222e;
+}
+
+.example-table,
+.java-table th,
+.example-table,
+.java-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.example-table,
+.java-table tbody tr:hover {
+  background-color: #1a222e;
+  color: #fefefe;
+  transition: background-color 0.3s;
+}
+
+.Btn {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Btn:hover {
+  background-color: #1d4ed8;
+}
+.infoBtnJava {
+  width: fit-content;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 10px 10px 0px 10px;
+}
+.infoBtnJava:hover {
+  transform: translateX(-20px);
+  background-color: #2563eb;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 2px #0a0a0c;
+}
+.infoBtnJava:active {
+  scale: 1.1;
+  background-color: #1d4ed8;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 2px #0a0a0c;
+}
+
+.step {
+  margin-top: 1rem;
+}
+
+li::before {
+  content: "🔹";
+  font-size: 1.2em;
+}
+
+pre {
+  font-size: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+}
+
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+pre {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+code {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+.java-imgLink {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid transparent; /* Transparent border initially */
+  border-radius: 4px; /* Subtle rounded corners */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transitions */
+}
+.java-Text2 {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 0px 0px 0px 10px;
+  transition: all 0.3s ease, border-bottom 0.01s ease;
+  text-align: center;
+}
+
+.itemTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemToggle{
+  margin-top: 10px;
+}
+li.java-imgLink::before {
+  content: "🔹";
+  font-size: 1.2em;
+}
+@media (max-width: 500px) {
+  .java-wrapper {
+    padding: 24px 0 24px 0;
+  }
+  .java-card {
+    width: 95%;
+  }
+}
