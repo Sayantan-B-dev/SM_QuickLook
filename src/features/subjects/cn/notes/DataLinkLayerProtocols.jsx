@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../CSS/Cn.css";
+import "../../../../CSS/CN.css";
 
 function DatalinkLayerProtocols() {
   return (
