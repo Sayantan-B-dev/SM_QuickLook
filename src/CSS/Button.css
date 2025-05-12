@@ -45,7 +45,7 @@
 
 
 
-.allBtn,.diplomaBtn{
+.homeBtn,.allBtn,.diplomaBtn{
     padding: 5px 20px;
     color: rgb(168, 158, 158);
     border: none;
@@ -61,6 +61,15 @@
     border-radius: 18px;
 
   }
+}
+
+.homeBtn{
+  display: none;
+}
+@media (max-width: 500px) {
+  .homeBtn{
+  display: block;
+}
 }
 .cardBtn{
   padding: 5px 20px;

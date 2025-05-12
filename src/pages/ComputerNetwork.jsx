@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
 
 import AnimateOnScroll from "../components/Animations/AnimateOnScroll";
 import SectionHead from "../components/SectionHead";
@@ -100,21 +102,31 @@ import DiplomaCN from "../features/subjects/cn/notes/DiplomaCN"
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
+  const navigate = useNavigate();
+  function handleLink() {
+    navigate('/');
+  }
   return (
     <>
       <div className="parentHeader">
-        <div className="CategoryCn justify-center flex flex-col gap-2 top-0 z-10">
+        <div className="Category justify-center flex flex-col gap-2 top-0 z-10">
           <button
             className="allBtn cnBtn"
             onClick={() => setActiveTab("all")}
           >
-            All
+            All-CN
           </button>
           <button
             className="diplomaBtn cnBtn"
             onClick={() => setActiveTab("diploma")}
           >
-            Diploma
+            Diploma-CN
+          </button>
+          <button
+            className="homeBtn"
+            onClick={handleLink}
+          >
+            Home
           </button>
         </div>
         <div className="SectionName">Computer Network</div>

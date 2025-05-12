@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 import AnimateOnScroll from "../components/Animations/AnimateOnScroll";
 import SectionHead from "../components/SectionHead";
@@ -52,21 +53,31 @@ import DiplomaSE from "../features/subjects/se/notes/DiplomaSE"
 
 function OperatingSystem() {
   const [activeTab, setActiveTab] = useState("all");
+  const navigate = useNavigate();
+  function handleLink() {
+    navigate('/');
+  }
   return (
     <>
       <div className="parentHeader">
-        <div className="CategoryOs justify-center flex flex-col gap-2 top-0 z-10">
+        <div className="Category justify-center flex flex-col gap-2 top-0 z-10">
           <button
             className="allBtn dbmsBtn"
             onClick={() => setActiveTab("all")}
           >
-            All
+            All-SE
           </button>
           <button
             className="diplomaBtn dbmsBtn"
             onClick={() => setActiveTab("diploma")}
           >
-            Diploma
+            Diploma-SE
+          </button>
+          <button
+            className="homeBtn"
+            onClick={handleLink}
+          >
+            Home
           </button>
         </div>
       </div>
@@ -74,42 +85,42 @@ function OperatingSystem() {
       {activeTab === "all" && (
         <div className="allOs">
           {[
-            <SoftwareEngineeringDefinitionEvolution/>,
-            <SDLC/>,
-            <ClassicalWaterfallModel/>,
-            <IterativeWaterfallMode/>,
-            <VShapedModel/>,
-            <PrototypingModel/>,
-            <IncrementalModel/>,
-            <EvolutionaryModel/>,
-            <SpiralModel/>,
-            <RADModel/>,
-            <AgileModel/>,
-            <Scrum/>,
-            <SDLCComparison/>,
-            <RequirementEngineering/>,
-            <SoftwareRequirementSpecification/>,
-            <DataFlowDiagram/>,
-            <DesignApproachComparison/>,
-            <SoftwareProjectManagement/>,
-            <RiskManagement/>,
-            <COCOMO/>,
-            <COCOMOModels/>,
-            <CPMAndPERT/>,
-            <VerificationVsValidation/>,
-            <SoftwareTesting/>,
-            <CohesionAndCoupling/>,
-            <SoftwareTestingTypes/>,
-            <WhiteBoxTechniques/>,
-            <BoundaryValueTesting/>,
-            <SoftwareMaintenance/>,
-            <ReverseEngineeringAndCASE/>,
-            <PerformanceAndRegressionTesting/>,
-            <UMLDiagrams/>,
-            <ProjectSizeEstimation/>,
-            <FunctionPointAnalysis/>,
-            <AggregationVsComposition/>,
-            
+            <SoftwareEngineeringDefinitionEvolution />,
+            <SDLC />,
+            <ClassicalWaterfallModel />,
+            <IterativeWaterfallMode />,
+            <VShapedModel />,
+            <PrototypingModel />,
+            <IncrementalModel />,
+            <EvolutionaryModel />,
+            <SpiralModel />,
+            <RADModel />,
+            <AgileModel />,
+            <Scrum />,
+            <SDLCComparison />,
+            <RequirementEngineering />,
+            <SoftwareRequirementSpecification />,
+            <DataFlowDiagram />,
+            <DesignApproachComparison />,
+            <SoftwareProjectManagement />,
+            <RiskManagement />,
+            <COCOMO />,
+            <COCOMOModels />,
+            <CPMAndPERT />,
+            <VerificationVsValidation />,
+            <SoftwareTesting />,
+            <CohesionAndCoupling />,
+            <SoftwareTestingTypes />,
+            <WhiteBoxTechniques />,
+            <BoundaryValueTesting />,
+            <SoftwareMaintenance />,
+            <ReverseEngineeringAndCASE />,
+            <PerformanceAndRegressionTesting />,
+            <UMLDiagrams />,
+            <ProjectSizeEstimation />,
+            <FunctionPointAnalysis />,
+            <AggregationVsComposition />,
+
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
@@ -119,7 +130,7 @@ function OperatingSystem() {
       {activeTab === "diploma" && (
         <div className="diplomaOs">
           {[
-            <DiplomaSE/>,
+            <DiplomaSE />,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}

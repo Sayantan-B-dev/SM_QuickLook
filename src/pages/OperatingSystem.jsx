@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 import AnimateOnScroll from "../components/Animations/AnimateOnScroll";
 import SectionHead from "../components/SectionHead";
@@ -77,21 +78,31 @@ import DiplomaOS from "../features/subjects/os/notes/DiplomaOS";
 
 function OperatingSystem() {
   const [activeTab, setActiveTab] = useState("all");
+  const navigate = useNavigate();
+  function handleLink() {
+    navigate('/');
+  }
   return (
     <>
       <div className="parentHeader">
-        <div className="CategoryOs justify-center flex flex-col gap-2 top-0 z-10">
+        <div className="Category justify-center flex flex-col gap-2 top-0 z-10">
           <button
             className="allBtn dbmsBtn"
             onClick={() => setActiveTab("all")}
           >
-            All
+            All-OS
           </button>
           <button
             className="diplomaBtn dbmsBtn"
             onClick={() => setActiveTab("diploma")}
           >
-            Diploma
+            Diploma-OS
+          </button>
+                    <button
+            className="homeBtn"
+            onClick={handleLink}
+          >
+            Home
           </button>
         </div>
         <div className="SectionName">Operating System</div>
