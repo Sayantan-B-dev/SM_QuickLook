@@ -80,13 +80,13 @@ import DataLinkLayerDeepDive from "../features/subjects/cn/notes/DataLinkLayerDe
 import TransportLayerProtocols from "../features/subjects/cn/notes/TransportLayerProtocols";
 import ApplicationLayer2 from "../features/subjects/cn/notes/ApplicationLayer2";
 
-import Repeaters2 from "../features/subjects/cn/notes/NetworkDevices/Repeaters2.jsx";
-import Hubs2 from "../features/subjects/cn/notes/NetworkDevices/Hubs2.jsx";
-import Switches2 from "../features/subjects/cn/notes/NetworkDevices/Switches2.jsx";
-import Routers2 from "../features/subjects/cn/notes/NetworkDevices/Routers2.jsx";
-import AccessPoints2 from "../features/subjects/cn/notes/NetworkDevices/AccessPoints2.jsx";
-import Gateways2 from "../features/subjects/cn/notes/NetworkDevices/Gateways2.jsx";
-import Bridges2 from "../features/subjects/cn/notes/NetworkDevices/Bridges2.jsx";
+import Repeaters2 from "../features/subjects/cn/notes/Repeaters2.jsx";
+import Hubs2 from "../features/subjects/cn/notes/Hubs2.jsx";
+import Switches2 from "../features/subjects/cn/notes/Switches2.jsx";
+import Routers2 from "../features/subjects/cn/notes/Routers2.jsx";
+import AccessPoints2 from "../features/subjects/cn/notes/AccessPoints2.jsx";
+import Gateways2 from "../features/subjects/cn/notes/Gateways2.jsx";
+import Bridges2 from "../features/subjects/cn/notes/Bridges2.jsx";
 
 import DiplomaCN from "../features/subjects/cn/notes/DiplomaCN"
 // import  from "../features/subjects/cn/notes/"
