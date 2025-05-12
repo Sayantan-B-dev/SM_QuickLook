@@ -334,3 +334,11 @@ li.cn-imgLink::before {
     font-size: 14px; 
   }
 }
+.modal-image {
+  min-width:500px;
+} 
+@media (max-width: 500px) {
+  .modal-image {
+  min-width:400px;
+} 
+}

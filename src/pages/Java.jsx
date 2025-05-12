@@ -10,12 +10,6 @@ import "../CSS/Button.css";
 import DiplomaJAVA from "../features/subjects/java/notes/DiplomaJAVA"
 import ONGOING from "../components/ONGOING"
 
-
-
-
-
-import DiplomaSE from "../features/subjects/se/notes/DiplomaSE"
-
 function OperatingSystem() {
   const [activeTab, setActiveTab] = useState("all");
   return (
@@ -37,24 +31,30 @@ function OperatingSystem() {
         </div>
       </div>
 
+
       {activeTab === "all" && (
         <div className="allOs">
-          {[
-            <ONGOING/>
-          ].map((Component, index) => (
-            <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
-          ))}
+          <ONGOING />
         </div>
       )}
-
-      {activeTab === "diploma" && (
-        <div className="diplomaOs">
+      {/* {activeTab === "all" && (
+        <div className="allOs">
           {[
-            <DiplomaJAVA/>,
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
         </div>
+      )} */}
+
+      {activeTab === "diploma" && (
+          <div className="diplomaOs">
+            {[
+              <DiplomaJAVA />,
+            ].map((Component, index) => (
+              <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
+            ))}
+
+          </div>
       )}
     </>
   );

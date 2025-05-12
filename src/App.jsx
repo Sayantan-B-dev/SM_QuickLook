@@ -13,6 +13,7 @@ import AppRoutes from './components/AppRoutes';
 function App() {
   return (
     <div className="main">
+
       <Router>
         <Navbar/>
         <AppRoutes /> 
