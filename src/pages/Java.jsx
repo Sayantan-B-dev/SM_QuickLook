@@ -8,7 +8,7 @@ import "../CSS/Button.css";
 
 
 import DiplomaJAVA from "../features/subjects/java/notes/DiplomaJAVA"
-
+import ONGOING from "../components/ONGOING"
 
 
 
@@ -40,7 +40,7 @@ function OperatingSystem() {
       {activeTab === "all" && (
         <div className="allOs">
           {[
-            
+            <ONGOING/>
           ].map((Component, index) => (
             <AnimateOnScroll key={index}>{Component}</AnimateOnScroll>
           ))}
