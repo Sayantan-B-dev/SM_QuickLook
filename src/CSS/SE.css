@@ -141,12 +141,12 @@ li>strong{
   }
   .tinyImg{
         box-shadow: 5px 5px 5px rgba(48, 48, 48, 0.767);
-    z-index: 23;
+    z-index: 100;
 
   }
   .tinyImg:hover{
     scale: 1.5;
-    transform: translateX(20px);
+    transform: translateX(5px);
     box-shadow: -5px 5px 5px rgba(48, 48, 48, 0.767);
   }
    .tinyImg2{

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../../../CSS/OS.css";
 import { title } from "framer-motion/client";
+import Magnet from "../../../../components/Animations/Magnet"
 
 function DiplomaOS() {
   const [openUnits, setOpenUnits] = useState({});
@@ -558,13 +559,14 @@ const [openImage, setOpenImage] = useState(null);
                               >
                                🔗{link.title}
                               </a>
+              <Magnet padding={25} disabled={false} magnetStrength={10}>
 
                               <img
                                 className="tinyImg"
                                 src={link.img}
                                 alt="thumbnail"
                                 onClick={() => openModal(link.img)} 
-                              />
+                              /></Magnet>
                             </div>
                           ))}
                         </div>

@@ -9,16 +9,19 @@ import SoftwareEngineering from '../pages/SoftwareEngineering';
 import Java from '../pages/Java';
 import "../CSS/AppRoutes.css";
 
+import DiplomaJAVA from "../features/subjects/java/notes/DiplomaJAVA"
+
 const AppRoutes = () => {
   return (
     <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dbms" element={<DatabaseManagementSystem />} />
-        <Route path="/computer_network" element={<ComputerNetwork />} />
+        <Route path="/cn" element={<ComputerNetwork />} />
         <Route path="/os" element={<OperatingSystem />} />
-        <Route path="/software_engineering" element={<SoftwareEngineering />} />
+        <Route path="/se" element={<SoftwareEngineering />} />
         <Route path="/java" element={<Java />} />
+        <Route path="/diploma-java" element={<DiplomaJAVA />} />
       </Routes>
     </div>
   );

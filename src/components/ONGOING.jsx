@@ -1,7 +1,12 @@
 import React from 'react';
 import CircularText from "./Animations/CircularText";
+import { useNavigate } from 'react-router-dom';
 
 function ONGOING() {
+  const navigate = useNavigate();
+  function handleLink() {
+    navigate('/diploma-java');
+  }
   return (
     <div style={{ minHeight: '100vh' }} className="bg-gray-900 flex items-center justify-center">
       <div
@@ -18,12 +23,12 @@ function ONGOING() {
           className="text-lg text-gray-300"
           style={{ marginBottom: '1.5rem' }}
         >
-          This page is currently under construction. We’re working hard to bring you something amazing!
+          This page is currently under construction. We’re working hard to bring you something amazing! Meanwhile you can check <br /><a onClick={handleLink} style={{textDecoration:"underline",cursor:"pointer"}}>Diploma page</a> <br /><span style={{fontSize:"10px"}}>(You can also navigate to the component through top-left buttons)</span>
         </p>
         <div className="flex justify-center">
           <CircularText
             text="WORK-ONGOING***"
-            onHover="speedUp"
+            onHover="pause"
             spinDuration={10}
           />
         </div>
