@@ -554,14 +554,8 @@ function DiplomaOS() {
                               <a
                                 href={link.url}
                                 className="os-imgLink2"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    link.url,
-                                    '_blank',
-                                    'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=800,height=600'
-                                  );
-                                }}
+                                target="_blank"
+                                
                                 rel="noopener noreferrer"
                               >
                                 🔗{link.title}
