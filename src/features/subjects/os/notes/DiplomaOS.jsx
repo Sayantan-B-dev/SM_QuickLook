@@ -343,7 +343,7 @@ function DiplomaOS() {
             {
               title: "Paging",
               url: "https://www.geeksforgeeks.org/paging-in-operating-system/",
-              img: "https://media.geeksforgeeks.org/wp-content/uploads/20200406111356/Untitled-Diagram66-3.jpg",
+              img: "https://media.geeksforgeeks.org/wp-content/uploads/20250109113209275879/paging.webp",
             },
             {
               title: "Segmentation",
