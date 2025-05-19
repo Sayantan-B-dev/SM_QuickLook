@@ -338,11 +338,11 @@ function DiplomaOS() {
             {
               title: "Swapping",
               url: "https://www.geeksforgeeks.org/swapping-in-operating-system/",
-              img: "",
+              img: "https://media.geeksforgeeks.org/wp-content/uploads/20200406111356/Untitled-Diagram66-3.jpg",
             },
             {
               title: "Paging",
-              url: "",
+              url: "https://www.geeksforgeeks.org/paging-in-operating-system/",
               img: "https://media.geeksforgeeks.org/wp-content/uploads/20200406111356/Untitled-Diagram66-3.jpg",
             },
             {
