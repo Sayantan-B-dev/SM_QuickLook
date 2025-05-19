@@ -6,14 +6,14 @@ import Magnet from "../../../../components/Animations/Magnet"
 function DiplomaOS() {
   const [openUnits, setOpenUnits] = useState({});
   const [openTopics, setOpenTopics] = useState({});
-const [openImage, setOpenImage] = useState(null); 
+  const [openImage, setOpenImage] = useState(null);
 
   const openModal = (imgUrl) => {
-    setOpenImage(imgUrl); 
+    setOpenImage(imgUrl);
   };
 
   const closeModal = () => {
-    setOpenImage(null); 
+    setOpenImage(null);
   };
   function toggleUnit(index) {
     setOpenUnits((prev) => ({ ...prev, [index]: !prev[index] }));
@@ -554,19 +554,26 @@ const [openImage, setOpenImage] = useState(null);
                               <a
                                 href={link.url}
                                 className="os-imgLink2"
-                                target="_blank"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    link.url,
+                                    '_blank',
+                                    'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=800,height=600'
+                                  );
+                                }}
                                 rel="noopener noreferrer"
                               >
-                               🔗{link.title}
+                                🔗{link.title}
                               </a>
-              <Magnet padding={25} disabled={false} magnetStrength={10}>
+                              <Magnet padding={25} disabled={false} magnetStrength={10}>
 
-                              <img
-                                className="tinyImg"
-                                src={link.img}
-                                alt="thumbnail"
-                                onClick={() => openModal(link.img)} 
-                              /></Magnet>
+                                <img
+                                  className="tinyImg"
+                                  src={link.img}
+                                  alt="thumbnail"
+                                  onClick={() => openModal(link.img)}
+                                /></Magnet>
                             </div>
                           ))}
                         </div>
