@@ -93,6 +93,7 @@ import NullValuesNestedComplexQueries from "../features/subjects/dbms/notes/Null
 import PlSqlIntroduction from "../features/subjects/dbms/notes/PlSqlIntroduction";
 import NormalizationAndDependencies from "../features/subjects/dbms/notes/NormalizationAndDependencies";
 import MultivaluedDependencies from "../features/subjects/dbms/notes/MultivaluedDependencies";
+import DiplomaDBMS from "../features/subjects/dbms/notes/DiplomaDBMS";
 
 function DatabaseManagementSystem() {
   const [activeTab, setActiveTab] = useState("all");
@@ -217,6 +218,8 @@ function DatabaseManagementSystem() {
       {activeTab === "diploma" && (
         <div className="diplomaDbms dbmsBox">
           {[
+            <SectionHead text="DATABASE MANAGEMENT SYSTEM" />,
+            <DiplomaDBMS />,
             <SectionHead text="Database System Concepts & Architecture" />,
             <DBMSintro />,
             <DBMSvsFile />,

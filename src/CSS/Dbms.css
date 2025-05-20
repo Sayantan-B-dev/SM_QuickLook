@@ -12,7 +12,19 @@
     padding: 32px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   }
-  
+  .dbms-imgLink2{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 16px;
+    padding: 1rem;
+    background-color: #1f2937;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .dbms-imgLink2:hover{
+    background-color: #374151;
+    transition: all 0.3s;
+  }
   .dbms-title {
     font-size: 2.5rem;
     font-weight: bold;
